@@ -21,10 +21,24 @@ $('document').ready(function(){
             console.log(user);
             category.push(user);            
         }
-        console.log(find_pattern("CZESC"));
-        get_template(find_pattern("czesc"));
+        search_answear("czesc");
+        
     }
 });
+    function search_answear(input)
+    {
+        var position_in_category=find_pattern(input);
+        console.log(find_pattern(input)); 
+        if(position_in_category==-1)
+        {
+            return "nie znaleziono takiego pytania";
+        }
+        else
+        {
+            return get_template(position_in_category);
+        }
+        
+    }
     
     function find_pattern(input)
     {
