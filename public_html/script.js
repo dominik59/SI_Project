@@ -24,7 +24,7 @@ $('document').ready(function(){
             category.push(user);            
         }
         search_answear("czesc");
-        add_category("ddd","ccc");
+        add_category("dddd","ccc");
         
     }
 });
@@ -68,11 +68,26 @@ $('document').ready(function(){
         var temp_xml_category = actual_xml.createElement("category");
         var temp_xml_pattern = actual_xml.createElement("pattern");
         var temp_xml_template = actual_xml.createElement("template");
-        temp_xml_pattern.text=pattern;
-        temp_xml_template.text=template;        
+        var temp_xml_pattern_text = actual_xml.createTextNode(pattern.toUpperCase());
+        var temp_xml_template_text = actual_xml.createTextNode(template);
+        temp_xml_pattern.appendChild(temp_xml_pattern_text);
+        temp_xml_template.appendChild(temp_xml_template_text);                
         temp_xml_category.appendChild(temp_xml_pattern);
         temp_xml_category.appendChild(temp_xml_template);
-        console.log(temp_xml_category);
+        $(actual_xml).find("aiml").append(temp_xml_category);
+        console.log(actual_xml);
+        $.ajax({   					 // te {{ }} są po to, by generator pominal to przy dokumentacji
+               type:"POST",               
+	       url: 'saving_xml.php',  //the script to call to get data          
+	       data: {xml:(new XMLSerializer()).serializeToString(actual_xml)},   			
+	                              			//you can insert url argumnets here to pass to api.php
+	                                        //for example "id=5&parent=6"
+	      dataType: 'xml',                 //data format      
+	      success: function(data)           //on recieve of reply
+	      {
+	        
+	      } 
+	    });
     }
 });
 
