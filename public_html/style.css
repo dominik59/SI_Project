@@ -1,3 +1,7 @@
+body
+{
+    overflow-y: hidden;
+}
 #robot{
     position:relative;
     padding-top: 10%;
@@ -7,7 +11,7 @@
     max-height: 500px;
 }
 #chmura{
-    position:absolute;
+    position:relative;
     margin-bottom: 400px;
     margin-right: 100px;
     top: 2%;
@@ -20,8 +24,8 @@
 }
 .user {
     position: absolute;
-    top: 24%;
-    left: 62%;
+    top: 31%;
+    left: 69%;
 }
 span > input {
     background-color: transparent;
@@ -32,6 +36,17 @@ span > input {
 #info{
     color: limegreen;
     position: absolute;
-    top: 14%;
-    left: 63%;
+    top: 17%;
+    left: 65%;
+    width: 264px;
+}
+.absolute_cloud
+{
+    position:absolute;
+    margin-bottom: 400px;
+    margin-right: 100px;
+    top: 2%;
+    left: 43%;
+    max-width: 500px;
+    max-height: 500px;
 }

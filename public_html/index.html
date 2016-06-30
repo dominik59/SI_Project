@@ -32,9 +32,11 @@ and open the template in the editor.
     <body>
         <div class="box">
             <img id ="robot" src ="Infobot_render.png" />
-            <img id ="chmura" src ="chmura.jpg" />
-            <span class="user"><input onclick="communicate()" onfocusout="noAnswer()" type="text" id="textInput" name="textInput" value="Napisz cos..." /></span>
-            <p id="info"><b>Hej gdzie chciałbyś pojechać?</b></p>
+            <div class="absolute_cloud">
+                <img id ="chmura" src ="chmura.jpg" />
+                <span class="user"><input onclick="communicate()" onfocusout="noAnswer()" type="text" id="textInput" name="textInput" value="Napisz cos..." /></span>
+                <p id="info"><b>Hej gdzie chciałbyś pojechać?</b></p>
+            </div>
         </div>
     </body>
 </html>
