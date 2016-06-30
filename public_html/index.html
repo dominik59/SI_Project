@@ -6,13 +6,35 @@ and open the template in the editor.
 -->
 <html>
     <head>
-        <title>TODO supply a title</title>
+        <title>Travel bot</title>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.0.0/jquery.min.js"></script>
         <script type="text/javascript" src="script.js"></script>
+        <title>Travel bot</title>
+
+        <link rel="stylesheet" type="text/css" href="style.css">
+
+        <script type="text/javascript">
+
+            function communicate(){
+
+                var x = document.getElementById("textInput");
+                x.value = "";
+            }
+
+            function noAnswer() {
+                var x = document.getElementById("textInput");
+                x.value = "Naprawde napisz cos ...";
+            }
+        </script>
     </head>
     <body>
-        <div>TODO write content</div>
+        <div class="box">
+            <img id ="robot" src ="Infobot_render.png" />
+            <img id ="chmura" src ="chmura.jpg" />
+            <span class="user"><input onclick="communicate()" onfocusout="noAnswer()" type="text" id="textInput" name="textInput" value="Napisz cos..." /></span>
+            <p id="info"><b>Hej gdzie chciałbyś pojechać?</b></p>
+        </div>
     </body>
 </html>
