@@ -4,6 +4,7 @@
  * and open the template in the editor.
  */
 category=[];
+
 $('document').ready(function(){
     $.ajax({
     type: "GET",
@@ -14,6 +15,7 @@ $('document').ready(function(){
         // Parse the xml file and get data
         var xmlDoc = $.parseXML(xml),
             $xml = $(xmlDoc);
+            actual_xml=xml;
        // alert(1);
         var users = xml.getElementsByTagName("category");
         for(var i = 0; i < users.length; i++) {
@@ -22,6 +24,7 @@ $('document').ready(function(){
             category.push(user);            
         }
         search_answear("czesc");
+        add_category("ddd","ccc");
         
     }
 });
@@ -58,6 +61,18 @@ $('document').ready(function(){
     {
         console.log(category[which_element].childNodes[3].childNodes[0].textContent);
         return category[which_element].childNodes[3].childNodes[0].textContent;
+    }
+    
+    function add_category(pattern,template)
+    {
+        var temp_xml_category = actual_xml.createElement("category");
+        var temp_xml_pattern = actual_xml.createElement("pattern");
+        var temp_xml_template = actual_xml.createElement("template");
+        temp_xml_pattern.text=pattern;
+        temp_xml_template.text=template;        
+        temp_xml_category.appendChild(temp_xml_pattern);
+        temp_xml_category.appendChild(temp_xml_template);
+        console.log(temp_xml_category);
     }
 });
 
