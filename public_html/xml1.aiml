@@ -22,4 +22,8 @@
 	<pattern>CO JEST W WARSZAWIE</pattern>
 	<template>W Warszawie jest Palac Kultury</template>
 </category>
+<category>
+	<pattern>Krakow</pattern>
+	<template>Miasto</template>
+</category>
 <category><pattern>DDD</pattern><template>ccc</template></category><category><pattern>DDD</pattern><template>ccc</template></category><category><pattern>DDDD</pattern><template>ccc</template></category><category><pattern>DDDD</pattern><template>ccc</template></category><category><pattern>DDDD</pattern><template>ccc</template></category><category><pattern>DDDD</pattern><template>ccc</template></category><category><pattern>DDDD</pattern><template>ccc</template></category></aiml>

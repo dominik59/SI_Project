@@ -7,7 +7,8 @@
 
 $('document').ready(function(){
     category=[];
-    
+    cityList=[];
+
     $.ajax({
     type: "GET",
     url: "xml1.aiml",
@@ -23,17 +24,21 @@ $('document').ready(function(){
         for(var i = 0; i < users.length; i++) {
             var user = users[i];
             console.log(user);
-            category.push(user);            
+            category.push(user);
         }
-        //console.log(search_answear("czesc"));
-        //add_category("dddd","ccc");
-        //console.log('witaj , witam Cie ' + search_answear("czesc"));
-        //console.log(findRepeat('witaj , witam Cie czesc ' + search_answear("witaj"), 2));
-        //are_strings_similar("sprawozdanie","sprawozdanie",80);
-        
-        
     }
 });
+
+    function isCity(position) {
+
+        if (category[position].childNodes[3].childNodes[0].textContent == "Miasto"){
+
+            return 1;
+        } else {
+
+            return 0;
+        }
+    }
 
     function findRepeat(input, minFreq) {
         var toCheck = [], zdanie = [], arq;
@@ -166,6 +171,11 @@ $('document').ready(function(){
     {
         //alert(1);
         var position_in_category=find_pattern(input);
+        if (isCity(position_in_category) == 1){
+
+            gcseCallback(input);
+            return "Jak Ci sie podoba?";
+        }
         //console.log(find_pattern(input)); 
         if(position_in_category==-1)
         {
@@ -288,31 +298,52 @@ $('document').ready(function(){
     }
     function focuse(){
 
-                var x = document.getElementById("textInput");
-                x.value = "";
-            }
+        var x = document.getElementById("textInput");
+        x.value = "";
+    }
 
-            function noFocuse() {
-                var x = document.getElementById("textInput");
-                x.value = "Naprawde napisz cos ...";
-            }
+    function noFocuse() {
+        var x = document.getElementById("textInput");
+        x.value = "Naprawde napisz cos ...";
+    }
 
-            function communicate(event) {
-                var x = event.which;
-                if (x == 13){
-//                    var text = document.getElementById("textInput");
-//                    console.log(text.value);
-//                    text.value = "";
-                    server();
-                }
-            }
+    function communicate(event) {
+        var x = event.which;
+        if (x == 13){
+            var text = document.getElementById("textInput");
+            console.log(text.value);
+            server();
+            text.value = "";
+        }
+    }
 
-            // glowna metoda do komunikacji gdzie bedzie zainplementowana logika naszego robota
-            function server() {                
-                var odpowiedz = document.getElementById("info");
-                console.log(document.getElementById("textInput").value);
-                odpowiedz.innerHTML = search_answear(document.getElementById("textInput").value);
-            }
+    // glowna metoda do komunikacji gdzie bedzie zainplementowana logika naszego robota
+    function server() {                
+        var odpowiedz = document.getElementById("info");
+        console.log(document.getElementById("textInput").value);
+        odpowiedz.innerHTML = search_answear(document.getElementById("textInput").value);
+    }
+    
+    function gcseCallback(toSearch) {
+        if (document.readyState != 'complete')
+            return google.setOnLoadCallback(gcseCallback, true);
+
+        google.search.cse.element.render({gname:'gsearch', div:'results', tag:'searchresults-only', attributes:{linkTarget:'', disableWebSearch:"true"}});
+        var element = google.search.cse.element.getElement('gsearch');
+        element.execute(toSearch);
+
+    };
+    (function() {
+        var cx = '015850841452003814373:jaqkxpwmmba';
+        var gcse = document.createElement('script');
+        gcse.type = 'text/javascript';
+        gcse.async = true;
+        gcse.src = (document.location.protocol == 'https:' ? 'https:' : 'http:') +
+            '//www.google.com/cse/cse.js?cx=' + cx;
+        var s = document.getElementsByTagName('script')[0];
+        s.parentNode.insertBefore(gcse, s);
+    })();
+    
     $( ".user" ).keypress(function() {
         communicate(event);
     });
