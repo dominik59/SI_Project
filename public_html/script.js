@@ -25,6 +25,7 @@ $('document').ready(function(){
             console.log(user);
             category.push(user);
         }
+            //add_category("ddd","asaa");
     }
 });
 
@@ -384,8 +385,8 @@ $('document').ready(function(){
         var temp_xml_category = actual_xml.createElement("category");
         var temp_xml_pattern = actual_xml.createElement("pattern");
         var temp_xml_template = actual_xml.createElement("template");
-        var temp_xml_pattern_text = actual_xml.createTextNode(pattern.toUpperCase());
-        var temp_xml_template_text = actual_xml.createTextNode(template);
+        var temp_xml_pattern_text = actual_xml.createTextNode(pattern.toUpperCase()+"\n");
+        var temp_xml_template_text = actual_xml.createTextNode(template+"\n");
         temp_xml_pattern.appendChild(temp_xml_pattern_text);
         temp_xml_template.appendChild(temp_xml_template_text);                
         temp_xml_category.appendChild(temp_xml_pattern);
