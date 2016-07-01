@@ -192,9 +192,6 @@
 	<pattern>Kędzierzyn-Koźle</pattern>
 	<template>Miasto</template>
 </category>
-<<<<<<< HEAD
-<category><pattern>SSS</pattern><template>ddd</template></category><category><pattern>KRAKOWTAK</pattern><template>Sukiennice</template></category></aiml>
-=======
 <category>
 	<pattern>Kedzierzyn Kozle</pattern>
 	<template>Miasto</template>
@@ -249,13 +246,5 @@
 	<pattern>Co słychać ?</pattern>
 	<template>Bardzo dobrze, a u Ciebie ?</template>
 </category>
-
-
-
-
-
-
-
-
 </aiml>
->>>>>>> 057912f80149dea1203e41921cdf276a7101d02b
+

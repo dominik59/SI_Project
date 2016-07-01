@@ -25,6 +25,7 @@ $('document').ready(function(){
             console.log(user);
             category.push(user);
         }
+        console.log(category);
             //add_category("ddd","asaa");
     }
 });
