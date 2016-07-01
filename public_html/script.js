@@ -33,6 +33,35 @@ $('document').ready(function(){
     }
 });
 
+    function fokuse(){
+
+        var x = document.getElementById("textInput");
+        x.value = "";
+    }
+
+    function noFokuse() {
+
+        var x = document.getElementById("textInput");
+        x.value = "Naprawde napisz cos ...";
+    }
+
+    function communicate(event) {
+        var x = event.which;
+        if (x == 13){
+            var text = document.getElementById("textInput");
+            console.log(text.value);
+            text.value = "";
+            server(text);
+        }
+    }
+
+    // glowna metoda do komunikacji gdzie bedzie zainplementowana logika naszego robota
+    function server(text) {
+        var odpowiedz = document.getElementById("info");
+        odpowiedz.innerHTML = "No Czesc";
+
+    }
+
     function findRepeat(input, minFreq) {
         var toCheck = [], zdanie = [], arq;
         for (var i = 0; i < input.length; i++){
@@ -166,7 +195,7 @@ $('document').ready(function(){
         //console.log(find_pattern(input)); 
         if(position_in_category==-1)
         {
-            return "nie znaleziono takiego pytania";
+            return -1;
         }
         else
         {

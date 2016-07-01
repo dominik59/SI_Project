@@ -12,43 +12,13 @@ and open the template in the editor.
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.0.0/jquery.min.js"></script>
         <script src="https://www.google.com/jsapi" type="text/javascript"></script>
         <script type="text/javascript" src="script.js"></script>
+
         <title>Travel bot</title>
 
         <link rel="stylesheet" type="text/css" href="style.css">
-
-        <script type="text/javascript">
-
-            function fokuse(){
-
-                var x = document.getElementById("textInput");
-                x.value = "";
-            }
-
-            function noFokuse() {
-                var x = document.getElementById("textInput");
-                x.value = "Naprawde napisz cos ...";
-            }
-
-            function communicate(event) {
-                var x = event.which;
-                if (x == 13){
-                    var text = document.getElementById("textInput");
-                    console.log(text.value);
-                    text.value = "";
-                    server(text);
-                }
-            }
-
-            // glowna metoda do komunikacji gdzie bedzie zainplementowana logika naszego robota
-            function server(text) {
-                var odpowiedz = document.getElementById("info");
-                odpowiedz.innerHTML = "No Czesc";
-
-            }
-
-        </script>
     </head>
     <body>
+
         <div class="box">
             <img id ="robot" src ="Infobot_render.png" />
             <div class="absolute_cloud">
@@ -57,5 +27,6 @@ and open the template in the editor.
                 <p id="info"><b>Hej gdzie chciałbyś pojechać?</b></p>
             </div>
         </div>
+
     </body>
 </html>
