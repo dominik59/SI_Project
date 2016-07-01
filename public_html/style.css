@@ -50,3 +50,7 @@ span > input {
     max-width: 500px;
     max-height: 500px;
 }
+.gsc-results-wrapper-overlay{    
+    height: 60% !important;    
+    width: 25% !important;    
+}
