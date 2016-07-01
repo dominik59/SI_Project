@@ -406,10 +406,15 @@ $('document').ready(function(){
     });
     $( ".user" ).click(function() {
         focuse();
+        document.getElementById('robot').src="Infobot_render.png";
     });
     $( ".user" ).focusout(function() {
         noFocuse();
     });
+    $( ".gsc-results-close-btn" ).click(function() {
+        document.getElementById('robot').src="Infobot_render.png";
+    });
+    
 });
 
 
