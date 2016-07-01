@@ -40,12 +40,16 @@
 	<template>Specjalizuję się podróżowaniem po Polsce. Wybierz więc miejsce, w które chciałbyś się udać</template>
 </category>
 <category>
-	<pattern>Co jest w Warszawie ?</pattern>
+	<pattern>Co jest w Warszawie</pattern>
 	<template>W Warszawie jest Pałac Kultury, Zamek Królewski, ale najciekawsze są warszawskie Łazienki</template>
 </category>
 <category>
-	<pattern>CO jest w Krakowie ? </pattern>
-	<template>W Krakowie są Sukienice, Kazimierz, ale najciekawszy jest Wawel</template>
+	<pattern>CO jest w Krakowie</pattern>
+	<template>W Krakowie są Sukiennice, Kazimierz z najlepszymi zapiekankami ale najciekawszy jest Wawel</template>
+</category>
+<category>
+	<pattern>CO jest w Krakowie</pattern>
+	<template>W Krakowie są Sukiennice, Kazimierz z najlepszymi zapiekankami ale najciekawszy jest Wawel</template>
 </category>
 <category>
 	<pattern>Kraków</pattern>
@@ -80,8 +84,8 @@
 	<template>Park Cytadela, Ratusz Poznański oraz Palmiarnia</template>
 </category>
 <category>
-	<pattern>CO jest w Poznaniu ? </pattern>
-	<template>W Poznaniu jest Park Cytadela, Ratusz Poznański, ale najciekawsza jest Palmiarnia</template>
+	<pattern>CO jest w Poznaniu</pattern>
+	<template>W Poznaniu jest Park Cytadela, Ratusz Poznański ale najciekawsza jest Palmiarnia</template>
 </category>
 
 <category>
@@ -97,8 +101,8 @@
 	<template>Romantyczna ulica Mariacka, Brama Żuraw oraz Romantyczna ulica Mariacka, Brama Żuraw</template>
 </category>
 <category>
-	<pattern>Co jest w Gdańsku ? </pattern>
-	<template>W Gdańsku jest Romantyczna ulica Mariacka, Brama Żuraw, ale najciekawszy jest Dwór Artusa</template>
+	<pattern>Co jest w Gdańsku</pattern>
+	<template>W Gdańsku jest Romantyczna ulica Mariacka, Brama Żuraw ale najciekawszy jest Dwór Artusa</template>
 </category>
 
 <category>
@@ -110,13 +114,10 @@
 	<template>Molo Orłowo, Muzeum Emigracji oraz Akwarium Gdyńskie MIR</template>
 </category>
 <category>
-	<pattern>Co jest w Gdyni ?</pattern>
-	<template>W Gdyni jest Akwarium Gdyńskie MIR, Muzeum Emigracji , ale najciekawsze jest Molo Orłowo</template>
+	<pattern>Co jest w Gdyni</pattern>
+	<template>W Gdyni jest Akwarium Gdyńskie MIR, Muzeum Emigracji ale najciekawsze jest Molo Orłowo</template>
 </category>
-<category>
-	<pattern>Co jest w Kolobrzegu ?</pattern>
-	<template>W kołobrzegu jest Latarnia Morska, Muzeum Oręża Polskiego ale najciekawsza jest Bazylika Konkatedralna</template>
-</category>
+
 
 <category>
 	<pattern>Kołobrzeg</pattern>
@@ -131,6 +132,10 @@
 	<template>Latarnia Morska, Muzeum Oręża Polskiego oraz Bazylika Konkatedralna  </template>
 </category>
 <category>
+	<pattern>Co jest w Kolobrzegu</pattern>
+	<template>W Kołobrzegu jest Latarnia Morska, Muzeum Oręża Polskiego ale najciekawsza jest Bazylika Konkatedralna</template>
+</category>
+<category>
 	<pattern>Lublin</pattern>
 	<template>Miasto</template>
 </category>
@@ -139,7 +144,7 @@
 	<template>Starówka, Brama Krakowska oraz Kamienice na Placu Zamkowym</template>
 </category>
 <category>
-	<pattern>Co jest w Lublinei ?</pattern>
+	<pattern>Co jest w Lublinei</pattern>
 	<template>W Lublinie jest Brama Krakowska, Kamienice na placu Zamkowym , ale najpiękniejsza jest Starówka</template>
 </category>
 
@@ -153,7 +158,7 @@
 </category>
 
 <category>
-	<pattern>Co jest w Opolu ?</pattern>
+	<pattern>Co jest w Opolu</pattern>
 	<template>W Opolu jest Wenecja Opolska, Zoo, ale najciekawszy jest Amfiteatr</template>
 </category>
 <category>
@@ -165,7 +170,7 @@
 	<template>Katedra Gnieźnieńska, Kościół św. Wawrzyńca oraz słynne Drzwi Gnieźnieńskie</template>
 </category>
 <category>
-	<pattern>Co jest w Gnieźnie ?</pattern>
+	<pattern>Co jest w Gnieźnie</pattern>
 	<template>W Gnieźnie jest Katedra Gnieźnieńska, Kościół św. Wawrzyńca ale najciekawsze są Drzwi Gnieźnieńskie</template>
 </category>
 
@@ -186,8 +191,8 @@
 	<template>Rynek Główny, wrocławskie krasnale oraz panorama</template>
 </category>
 <category>
-	<pattern>Co jest we Wrocławiu ?</pattern>
-	<template>W Gnieźnie jest Rynek Główny, wrocławskie krasnale ale najciekawsza jest Panorama</template>
+	<pattern>Co jest we Wrocławiu</pattern>
+	<template>We Wroclawiu jest Rynek Główny, wrocławskie krasnale ale najciekawsza jest Panorama</template>
 </category>
 <category>
 	<pattern>Katowice</pattern>
@@ -199,8 +204,8 @@
 </category>
 
 <category>
-	<pattern>Co jest w Katowicach ?</pattern>
-	<template>W Gnieźnie jest Park Kościuszki, Nikiszowiec ale najfajniejszy jest Spodek</template>
+	<pattern>Co jest w Katowicach</pattern>
+	<template>W Katowicach jest Park Kościuszki, Nikiszowiec ale najfajniejszy jest Spodek</template>
 </category>
 <category>
 	<pattern>Rzeszów</pattern>
@@ -220,7 +225,7 @@
 </category>
 
 <category>
-	<pattern>Co jest w Rzeszowie ?</pattern>
+	<pattern>Co jest w Rzeszowie</pattern>
 	<template>W Rzeszowie jest Muzeum Dobranocek, Letni Pałac Lubomirskich ale najciekawszy jest Ratusz</template>
 </category>
 <category>
@@ -232,7 +237,7 @@
 	<template>Wyspa Młyńska, Muzeum Mydła oraz Myslecinek</template>
 </category>
 <category>
-	<pattern>Co jest w Bydgoszczy ?</pattern>
+	<pattern>Co jest w Bydgoszczy</pattern>
 	<template>W Bydgoszczy jest Wyspa Młyńska, Muzeum Mydła ale najciekawszy jest Myslecinek </template>
 </category>
 <category>
@@ -252,7 +257,7 @@
 	<template>Żywe Muzeum Piernika, Pomnik Mikołaja Kopernika oraz Planetarium</template>
 </category>
 <category>
-	<pattern>Co jest w Toruniu ?</pattern>
+	<pattern>Co jest w Toruniu</pattern>
 	<template>W Toruniu jest Żywe Muzeum Piernika, Pomnik Mikołaja Kopernika ale najciekawsze jest Planetarium</template>
 </category>
 <category>
@@ -264,8 +269,8 @@
 	<template>Baszta Dorotka, Katedra św Mikołaja oraz (w okolicy) Zamek w Gołuchowie</template>
 </category>
 <category>
-	<pattern>Co jest w Kaliszu ?</pattern>
-	<template>W Kaliszu jest ŻBaszta Dorotka, Katedra św Mikołaja ale (w okolicy) najciekawszy jest Zamek w Gołuchowie</template>
+	<pattern>Co jest w Kaliszu</pattern>
+	<template>W Kaliszu jest Baszta Dorotka, Katedra św Mikołaja ale (w okolicy) najciekawszy jest Zamek w Gołuchowie</template>
 </category>
 <category>
 	<pattern>Zakopane</pattern>
@@ -276,7 +281,7 @@
 	<template>Morskie Oko, Kasprowy Wierch oraz Krupówki</template>
 </category>
 <category>
-	<pattern>Co jest w Zakopanem ?</pattern>
+	<pattern>Co jest w Zakopanem</pattern>
 	<template>W Zakopanem jest Morskie Oko, Kasprowy Wierch ale najfajniejsze są Krupówki</template>
 </category>
 <category>
@@ -292,61 +297,61 @@
 	<template>Piwnice pałacu Branickich, Panorama oraz Pałac Nowika </template>
 </category>
 <category>
-	<pattern>Co jest w Białymstoku ?</pattern>
-	<template>W Białymstoku jestPiwnice pałacu Branickich, Panorama ale najciekawszy jest Pałac Nowika</template>
+	<pattern>Co jest w Białymstoku</pattern>
+	<template>W Białymstoku są Piwnice pałacu Branickich, Panorama ale najciekawszy jest Pałac Nowika</template>
 </category>
 
 
 
 <category>
-	<pattern>Jak masz na imię ?</pattern>
-	<template>TravelBot. A jakie jest Twoje ?</template>
+	<pattern>Jak masz na imię </pattern>
+	<template>TravelBot. A jakie jest Twoje </template>
 </category>
 <category>
-	<pattern>Jak masz na imie ?</pattern>
-	<template>TravelBot. A jakie jest Twoje ?</template>
+	<pattern>Jak masz na imie </pattern>
+	<template>TravelBot. A jakie jest Twoje </template>
 </category>
 
 <category>
-	<pattern>Ile masz lat ?</pattern>
+	<pattern>Ile masz lat </pattern>
 	<template>Jestem botem, dla mnie jest to nieistotne. Ale jak masz ochotę możesz powiedzieć, ile Ty masz lat.</template>
 </category>
 
 <category>
-	<pattern> Co lubisz robić ?</pattern>
+	<pattern> Co lubisz robić </pattern>
 	<template>Odpowiadać na Twoje pytania</template>
 </category>
 <category>
-	<pattern>Gdzie jedziemy ?</pattern>
+	<pattern>Gdzie jedziemy </pattern>
 	<template>Czeam na Twoje propozycje</template>
 </category>
 <category>
-	<pattern>Czym mogę tam pojechać ?</pattern>
+	<pattern>Czym mogę tam pojechać </pattern>
 	<template>Proponuję rower, ale samochód będzie rozsądniejszym wyjściem</template>
 </category>
 <category>
-	<pattern>Czym moge tam pojechac ?</pattern>
+	<pattern>Czym moge tam pojechac </pattern>
 	<template>Proponuję rower, ale samochód będzie rozsądniejszym wyjściem</template>
 </category>
 <category>
-	<pattern>Czy mogę udać się tam z rodziną ?</pattern>
+	<pattern>Czy mogę udać się tam z rodziną </pattern>
 	<template>Oczywiście! Jest to wspaniałe miejsce również dla dzieci</template>
 </category>
 <category>
-	<pattern>Czy moge udac sie tam z rodzina ?</pattern>
+	<pattern>Czy moge udac sie tam z rodzina </pattern>
 	<template>Oczywiście! Jest to wspaniałe miejsce również dla dzieci</template>
 </category>
 <category>
-	<pattern> Masz dziewczynę ?</pattern>
+	<pattern> Masz dziewczynę </pattern>
 	<template>Mam nadzieję, że moi twórcy, coś wymyślą :)</template>
 </category>
 <category>
-	<pattern> Masz dziewczyne ?</pattern>
+	<pattern> Masz dziewczyne </pattern>
 	<template>Mam nadzieję, że moi twórcy, coś wymyślą :)</template>
 </category>
 <category>
-	<pattern>Co słychać ?</pattern>
-	<template>Bardzo dobrze, a u Ciebie ?</template>
+	<pattern>Co słychać </pattern>
+	<template>Bardzo dobrze, a u Ciebie </template>
 </category>
 </aiml>
 

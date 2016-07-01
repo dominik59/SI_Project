@@ -260,7 +260,16 @@ $('document').ready(function(){
                 }
             }
 
-            return get_template(search_for_max_question_compatibility(input,50));
+            var temp = get_template(search_for_max_question_compatibility(input,50));
+            if(temp==" ")
+            {
+                
+            }
+            else
+            {
+                return temp;
+            }
+             
         }
 //        var position_in_category=find_pattern(input);
 //        //console.log(find_pattern(input)); 
@@ -345,11 +354,12 @@ $('document').ready(function(){
             }
             else
             {
-                $('#textInput').val=get_template(find_pattern(input));
+                document.getElementById('info').innerHTML=get_template(find_pattern(input));
                 var last_word=get_template(find_pattern(input)).split(" ");
                 //console.log(last_word);
                 document.getElementById('robot').src="Infobot_render1.png";
                 gcseCallback(last_word[last_word.length-1]);
+                return -2;
             }
         }
         console.log(value_of_max_compatibility_element);
@@ -425,6 +435,10 @@ $('document').ready(function(){
         if(which_element==-1)
         {
             return -1;
+        }
+        else if(which_element==-2)
+        {
+            return " ";
         }
         else
         {
