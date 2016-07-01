@@ -395,7 +395,7 @@ $('document').ready(function(){
                         return "Moze " + city + " ludzie zachwalaja to miejsce za "+category[i].childNodes[3].childNodes[0].textContent;
                     }
                 }
-                return "Moze" + city;
+                return "Moze " + city;
             }
         }
 
