@@ -23,10 +23,10 @@ $('document').ready(function(){
             console.log(user);
             category.push(user);            
         }
-        search_answear("czesc");
+        console.log(search_answear("czesc"));
         //add_category("dddd","ccc");
         //console.log('witaj , witam Cie ' + search_answear("czesc"));
-        console.log(findRepeat('witaj , witam Cie czesc ' + search_answear("witaj"), 2));
+        //console.log(findRepeat('witaj , witam Cie czesc ' + search_answear("witaj"), 2));
         //are_strings_similar("sprawozdanie","sprawozdanie",80);
         
         
@@ -337,6 +337,7 @@ $('document').ready(function(){
             // glowna metoda do komunikacji gdzie bedzie zainplementowana logika naszego robota
             function server() {                
                 var odpowiedz = document.getElementById("info");
+                console.log(document.getElementById("textInput").value);
                 odpowiedz.innerHTML = search_answear(document.getElementById("textInput").value);
             }
     $( ".user" ).keypress(function() {
