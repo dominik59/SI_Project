@@ -159,6 +159,31 @@ $('document').ready(function(){
         
     }
     
+    function search_for_max_question_compatibility(input,compatibility_percentage)
+    {
+        var value_of_max_compatibility_element;
+        var pos_of_elem_with_max_compatibility=-1;
+        for(var i = 0; i<category;i++)
+        {
+            if(i==0){
+                var temp = findRepeat(input.toLowerCase() + " " + get_pattern(i),2);
+                value_of_max_compatibility_element=temp.length;
+                pos_of_elem_with_max_compatibility=i;
+            }
+            else
+            {
+                var temp = findRepeat(input.toLowerCase() + " " + get_pattern(i),2);
+                if(temp.length>value_of_max_compatibility_element)
+                {
+                    value_of_max_compatibility_element=temp.length;
+                    pos_of_elem_with_max_compatibility=i;
+                }
+            }
+        
+        }
+        return get_pattern(pos_of_elem_with_max_compatibility);
+    }
+    
     function find_pattern(input)
     {
         var counter = -1;
@@ -173,6 +198,12 @@ $('document').ready(function(){
         }
         return counter;
     }
+    
+    function get_pattern(which_one)
+    {
+        return category[which_one].childNodes[1].childNodes[0].textContent.toLowerCase();
+    }
+    
     function get_template(which_element)
     {
         //console.log(category[which_element].childNodes[3].childNodes[0].textContent);
