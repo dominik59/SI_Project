@@ -167,12 +167,20 @@ $('document').ready(function(){
         
     }
 
+    var cityQuestion;
+
     function search_answear(input)
     {
         //alert(1);
+
+        if (cityQuestion == 1){
+
+            console.log("TAK/NIE");
+        }
+
         var position_in_category=find_pattern(input);
         if (isCity(position_in_category) == 1){
-
+            cityQuestion = 1;
             gcseCallback(input);
             return "Jak Ci sie podoba?";
         }
