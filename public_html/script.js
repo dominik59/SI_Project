@@ -7,7 +7,6 @@
 
 $('document').ready(function(){
     category=[];
-    cityList=[];
 
     $.ajax({
     type: "GET",
@@ -31,12 +30,14 @@ $('document').ready(function(){
 
     function isCity(position) {
 
-        if (category[position].childNodes[3].childNodes[0].textContent == "Miasto"){
+        if (position != 1) {
+            if (category[position].childNodes[3].childNodes[0].textContent == "Miasto") {
 
-            return 1;
-        } else {
+                return 1;
+            } else {
 
-            return 0;
+                return 0;
+            }
         }
     }
 
