@@ -180,7 +180,7 @@ $('document').ready(function(){
         }
 
         var position_in_category=find_pattern(input);
-        if (isCity(position_in_category) == 1){
+        if (isCity(position_in_category) != -1){
             cityQuestion = 1;
             gcseCallback(input);
             return "Jak Ci sie podoba?";

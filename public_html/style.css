@@ -51,6 +51,11 @@ span > input {
     max-height: 500px;
 }
 .gsc-results-wrapper-overlay{    
-    height: 60% !important;    
-    width: 25% !important;    
+    height: 74% !important;    
+    width: 25% !important;
+    left: 4% !important;
+}
+
+.gsc-modal-background-image-visible{
+    opacity: 0 !important;
 }
