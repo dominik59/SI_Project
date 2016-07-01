@@ -1,5 +1,4 @@
-<?xml version='1.0' encoding='UTF-8' ?> 
-<!-- was: <?xml version="1.0" encoding="ISO-8859-15"?> --><aiml>
+<?xml version="1.0" encoding="UTF-8"?><!-- was: <?xml version="1.0" encoding="ISO-8859-15"?> --><aiml>
 <!--author: Dominik-->
 <!--licence: Standard-->
 <!--created with: GaitoBot AIML Editor V2.7.0.37793-->
@@ -41,7 +40,7 @@
 </category>
 <category>
 	<pattern>Co jest w Warszawie</pattern>
-	<template>W Warszawie jest Pałac Kultury, Zamek Królewski, ale najciekawsze są warszawskie Łazienki</template>
+	<template>W Warszawie jest Pałac Kultury, Zamek Królewski, ale najciekawsze są warszawskie Łazienki</template>
 </category>
 <category>
 	<pattern>CO jest w Krakowie</pattern>
@@ -85,7 +84,7 @@
 </category>
 <category>
 	<pattern>CO jest w Poznaniu</pattern>
-	<template>W Poznaniu jest Park Cytadela, Ratusz Poznański ale najciekawsza jest Palmiarnia</template>
+	<template>W Poznaniu jest Park Cytadela, Ratusz Poznański ale najciekawsza jest poznańska Palmiarnia</template>
 </category>
 
 <category>
@@ -102,7 +101,7 @@
 </category>
 <category>
 	<pattern>Co jest w Gdańsku</pattern>
-	<template>W Gdańsku jest Romantyczna ulica Mariacka, Brama Żuraw ale najciekawszy jest Dwór Artusa</template>
+	<template>W Gdańsku jest Romantyczna ulica Mariacka, Brama Żuraw ale najciekawszy jest Dwór Artusa</template>
 </category>
 
 <category>
@@ -115,7 +114,7 @@
 </category>
 <category>
 	<pattern>Co jest w Gdyni</pattern>
-	<template>W Gdyni jest Akwarium Gdyńskie MIR, Muzeum Emigracji ale najciekawsze jest Molo Orłowo</template>
+	<template>W Gdyni jest Akwarium Gdyńskie MIR, Muzeum Emigracji ale najciekawsze jest Molo Orłowo</template>
 </category>
 
 
@@ -133,7 +132,7 @@
 </category>
 <category>
 	<pattern>Co jest w Kolobrzegu</pattern>
-	<template>W Kołobrzegu jest Latarnia Morska, Muzeum Oręża Polskiego ale najciekawsza jest Bazylika Konkatedralna</template>
+	<template>W Kołobrzegu jest Latarnia Morska, Muzeum Oręża Polskiego ale najciekawsza jest Bazylika Konkatedralna</template>
 </category>
 <category>
 	<pattern>Lublin</pattern>
@@ -144,7 +143,7 @@
 	<template>Starówka, Brama Krakowska oraz Kamienice na Placu Zamkowym</template>
 </category>
 <category>
-	<pattern>Co jest w Lublinei</pattern>
+	<pattern>Co jest w Lublinie</pattern>
 	<template>W Lublinie jest Brama Krakowska, Kamienice na placu Zamkowym , ale najpiękniejsza jest Starówka</template>
 </category>
 
@@ -159,7 +158,7 @@
 
 <category>
 	<pattern>Co jest w Opolu</pattern>
-	<template>W Opolu jest Wenecja Opolska, Zoo, ale najciekawszy jest Amfiteatr</template>
+	<template>W Opolu jest Wenecja Opolska, Zoo, ale najciekawszy jest opolski Amfiteatr</template>
 </category>
 <category>
 	<pattern>Gniezno</pattern>
@@ -171,7 +170,7 @@
 </category>
 <category>
 	<pattern>Co jest w Gnieźnie</pattern>
-	<template>W Gnieźnie jest Katedra Gnieźnieńska, Kościół św. Wawrzyńca ale najciekawsze są Drzwi Gnieźnieńskie</template>
+	<template>W Gnieźnie jest Katedra Gnieźnieńska, Kościół św. Wawrzyńca ale najciekawsze są Drzwi Gnieźnieńskie</template>
 </category>
 
 <category>
@@ -192,7 +191,7 @@
 </category>
 <category>
 	<pattern>Co jest we Wrocławiu</pattern>
-	<template>We Wroclawiu jest Rynek Główny, wrocławskie krasnale ale najciekawsza jest Panorama</template>
+	<template>We Wroclawiu jest Rynek Główny, wrocławskie krasnale ale najciekawsza jest Panorama Racławicka</template>
 </category>
 <category>
 	<pattern>Katowice</pattern>
@@ -205,7 +204,7 @@
 
 <category>
 	<pattern>Co jest w Katowicach</pattern>
-	<template>W Katowicach jest Park Kościuszki, Nikiszowiec ale najfajniejszy jest Spodek</template>
+	<template>W Katowicach jest Park Kościuszki, Nikiszowiec ale najfajniejszy jest katowicki Spodek</template>
 </category>
 <category>
 	<pattern>Rzeszów</pattern>
@@ -226,7 +225,7 @@
 
 <category>
 	<pattern>Co jest w Rzeszowie</pattern>
-	<template>W Rzeszowie jest Muzeum Dobranocek, Letni Pałac Lubomirskich ale najciekawszy jest Ratusz</template>
+	<template>W Rzeszowie jest Muzeum Dobranocek, Letni Pałac Lubomirskich ale najciekawszy jest rzeszowski Ratusz</template>
 </category>
 <category>
 	<pattern>Bydgoszcz</pattern>
@@ -258,7 +257,7 @@
 </category>
 <category>
 	<pattern>Co jest w Toruniu</pattern>
-	<template>W Toruniu jest Żywe Muzeum Piernika, Pomnik Mikołaja Kopernika ale najciekawsze jest Planetarium</template>
+	<template>W Toruniu jest Żywe Muzeum Piernika, Pomnik Mikołaja Kopernika ale najciekawsze jest toruńskie Planetarium</template>
 </category>
 <category>
 	<pattern>Kalisz</pattern>
@@ -270,7 +269,7 @@
 </category>
 <category>
 	<pattern>Co jest w Kaliszu</pattern>
-	<template>W Kaliszu jest Baszta Dorotka, Katedra św Mikołaja ale (w okolicy) najciekawszy jest Zamek w Gołuchowie</template>
+	<template>W Kaliszu jest Baszta Dorotka, Katedra św Mikołaja ale (w okolicy) najciekawszy jest Zamek w Gołuchowie</template>
 </category>
 <category>
 	<pattern>Zakopane</pattern>
@@ -298,7 +297,7 @@
 </category>
 <category>
 	<pattern>Co jest w Białymstoku</pattern>
-	<template>W Białymstoku są Piwnice pałacu Branickich, Panorama ale najciekawszy jest Pałac Nowika</template>
+	<template>W Białymstoku są Piwnice pałacu Branickich, Panorama ale najciekawszy jest Pałac Nowika</template>
 </category>
 
 
@@ -354,4 +353,3 @@
 	<template>Bardzo dobrze, a u Ciebie </template>
 </category>
 </aiml>
-

@@ -216,7 +216,7 @@ $('document').ready(function(){
                 return 'Ciesze sie, a co szczegolnie?';
             } else {
 
-                return 'Naprawde chce wiedziec! :(';
+                return 'Naprawde chce wiedziec! (TAK\/NIE) :(';
             }
         } else if (cityQuestion == 2) {
 
@@ -263,7 +263,7 @@ $('document').ready(function(){
             var temp = get_template(search_for_max_question_compatibility(input,50));
             if(temp==" ")
             {
-                
+                return " ";
             }
             else
             {
@@ -499,7 +499,10 @@ $('document').ready(function(){
     function server() {                
         var odpowiedz = document.getElementById("info");
         console.log(document.getElementById("textInput").value);
-        odpowiedz.innerHTML = search_answear(document.getElementById("textInput").value);
+        var odp = search_answear(document.getElementById("textInput").value);
+        if (odp != " "){
+            odpowiedz.innerHTML = odp; 
+        }
     }
     
     function gcseCallback(toSearch) {
