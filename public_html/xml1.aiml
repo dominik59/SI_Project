@@ -4,22 +4,22 @@
 <!--created with: GaitoBot AIML Editor V2.7.0.37793-->
 <category>
 	<pattern>CZESC</pattern>
-	<template>No witaj!</template>
+	<template>No witaj !</template>
 </category>
 <category>
 	<pattern>WITAJ</pattern>
-	<template>No czesc!</template>
+	<template>No czesc !</template>
 </category>
 <category>
 	<pattern>KIM JESTES</pattern>
-	<template>Jestem botem, inteligentnym programem, z ktÃÂÃÂ³rym mozesz pogadac :)</template>
+	<template>Jestem botem, inteligentnym programem, z ktÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂ³rym mozesz pogadac :)</template>
 </category>
 <category>
-	<pattern>O CO MOGE CIE ZAPYTAC</pattern>
-	<template>Specjalizuje sie glownie w ciekawych miejscach w rÃÂÃÂ³znych miastach w P<srai/>olsce</template>
+	<pattern>O CO MOGE CIE ZAPYTACs</pattern>
+	<template>Specjalizuje sie glownie w ciekawych miejscach w rÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂ³znych miastach w P<srai/>olsce</template>
 </category>
 <category>
 	<pattern>CO JEST W WARSZAWIE</pattern>
 	<template>W Warszawie jest Palac Kultury</template>
 </category>
-<category><pattern>DDD</pattern><template>ccc</template></category><category><pattern>DDD</pattern><template>ccc</template></category><category><pattern>DDDD</pattern><template>ccc</template></category><category><pattern>DDDD</pattern><template>ccc</template></category></aiml>
+<category><pattern>DDD</pattern><template>ccc</template></category><category><pattern>DDD</pattern><template>ccc</template></category><category><pattern>DDDD</pattern><template>ccc</template></category><category><pattern>DDDD</pattern><template>ccc</template></category><category><pattern>DDDD</pattern><template>ccc</template></category><category><pattern>DDDD</pattern><template>ccc</template></category><category><pattern>DDDD</pattern><template>ccc</template></category></aiml>
