@@ -26,7 +26,7 @@ $('document').ready(function(){
         search_answear("czesc");
         //add_category("dddd","ccc");
         //console.log('witaj , witam Cie ' + search_answear("czesc"));
-        //console.log(findRepeat('witaj , witam Cie czesc ' + search_answear("witaj"), 2));
+        console.log(findRepeat('witaj , witam Cie czesc ' + search_answear("witaj"), 2));
         //are_strings_similar("sprawozdanie","sprawozdanie",80);
         
         
@@ -38,18 +38,34 @@ $('document').ready(function(){
         for (var i = 0; i < input.length; i++){
 
             arq = input[i];
-            if (arq == " "){
-
+            if (arq == " "){                
+                if(zdanie.length!=0)
                 toCheck.push(zdanie.join(""));
                 zdanie = [];
-            } else {
-
+            } else {                
                 zdanie.push(arq);
             }
         }
         
         toCheck.push(zdanie.join(""));
-
+        //console.log(toCheck.indexOf("!"));
+        while(toCheck.indexOf("!")!=-1 || toCheck.indexOf("!")!=-1 || toCheck.indexOf("?")!=-1)
+        {
+            if(toCheck.indexOf("!")!=-1)
+            {
+                toCheck.splice(toCheck.indexOf("!"),1);
+            }
+            if(toCheck.indexOf(",")!=-1)
+            {
+                toCheck.splice(toCheck.indexOf(","),1);
+            }
+            if(toCheck.indexOf("?")!=-1)
+            {
+                toCheck.splice(toCheck.indexOf("?"),1);
+            }
+        }
+        //console.log(toCheck);
+        
         var repeat = [];
         var count = [];
 
@@ -132,13 +148,13 @@ $('document').ready(function(){
         percentage=(parseFloat(percentage)/parseFloat(input_string.length))*100.0;
         if(percentage>=similarity_percentage && 100-similarity_percentage+100>=percentage)
         {
-            console.log(percentage);
-            console.log(input_string_keys);
-            console.log(input_string_values);
+            //console.log(percentage);
+            //console.log(input_string_keys);
+            //console.log(input_string_values);
             return true;            
         }
         else
-        {   console.log(percentage);
+        {   //console.log(percentage);
             return false;
         }
         
