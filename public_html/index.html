@@ -17,15 +17,24 @@ and open the template in the editor.
 
         <script type="text/javascript">
 
-            function communicate(){
+            function fokuse(){
 
                 var x = document.getElementById("textInput");
                 x.value = "";
             }
 
-            function noAnswer() {
+            function noFokuse() {
                 var x = document.getElementById("textInput");
                 x.value = "Naprawde napisz cos ...";
+            }
+
+            function communicate(event) {
+                var x = event.which;
+                if (x == 13){
+                    var text = document.getElementById("textInput");
+                    console.log(text.value);
+                    text.value = "";
+                }
             }
         </script>
     </head>
@@ -34,7 +43,7 @@ and open the template in the editor.
             <img id ="robot" src ="Infobot_render.png" />
             <div class="absolute_cloud">
                 <img id ="chmura" src ="chmura.jpg" />
-                <span class="user"><input onclick="communicate()" onfocusout="noAnswer()" type="text" id="textInput" name="textInput" value="Napisz cos..." /></span>
+                <span class="user"><input onclick="fokuse()" onkeypress="communicate(event)" onfocusout="noFokuse()" type="text" id="textInput" name="textInput" value="Napisz cos..." /></span>
                 <p id="info"><b>Hej gdzie chciałbyś pojechać?</b></p>
             </div>
         </div>
