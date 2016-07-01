@@ -30,7 +30,7 @@ $('document').ready(function(){
 
     function isCity(position) {
 
-        if (position != 1) {
+        if (position != -1) {
             if (category[position].childNodes[3].childNodes[0].textContent == "Miasto") {
 
                 return 1;
