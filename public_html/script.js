@@ -177,13 +177,10 @@ $('document').ready(function(){
             return "Jak Ci sie podoba?";
         }
         //console.log(find_pattern(input)); 
-        if(position_in_category==-1)
-        {
-            return -1;
-        }
+        
         else
         {
-            return get_template(position_in_category);
+            return get_template(search_for_max_question_compatibility(input,50));
         }
 //        var position_in_category=find_pattern(input);
 //        //console.log(find_pattern(input)); 
@@ -193,7 +190,7 @@ $('document').ready(function(){
 //        }
 //        else
 //        {
-            return get_template(search_for_max_question_compatibility(input,50));
+            
             //return get_template(position_in_category);
 //        }
         
