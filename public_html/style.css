@@ -50,3 +50,32 @@ span > input {
     max-width: 500px;
     max-height: 500px;
 }
+.gsc-results-wrapper-overlay{
+border: none;
+    margin: auto;
+    border-radius: 1px;
+    overflow: auto;
+    height: 60% !important;
+    -webkit-box-shadow: 0px 3px 10px rgba(34, 25, 25, 0.4);
+    -moz-box-shadow: 0px 3px 10px rgba(34, 25, 25, 0.4);
+    -ms-box-shadow: 0px 3px 10px rgba(34, 25, 25, 0.4);
+    -o-box-shadow: 0px 3px 10px rgba(34, 25, 25, 0.4);
+    box-shadow: 0px 3px 10px rgba(34, 25, 25, 0.4);
+    border-collapse: separate;
+    background: white;
+    padding: 30px;
+    width: 25% !important;
+    position: fixed !important;
+    top: 5%;
+    left: 12%;
+    opacity: 0;
+    z-index: 100002;
+    visibility: hidden;
+    -webkit-transition: all 0.25s linear;
+    -moz-transition: all 0.25s linear;
+    -ms-transition: all 0.25s linear;
+    -o-transition: all 0.25s linear;
+    transition: all 0.25s linear;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Shadow(Strength=7, Direction=135, Color='#888888')";
+    filter: progid:DXImageTransform.Microsoft.Shadow(Strength=7, Direction=135, Color='#888888');
+}
