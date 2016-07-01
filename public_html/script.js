@@ -25,9 +25,67 @@ $('document').ready(function(){
         }
         search_answear("czesc");
         add_category("dddd","ccc");
+        findRepeat('nie wiem nie wiem', 2);
         
     }
 });
+
+    function findRepeat(input, minFreq) {
+        var toCheck = [], zdanie = [], arq;
+        for (var i = 0; i < input.length; i++){
+
+            arq = input[i];
+            if (arq == " "){
+
+                toCheck.push(zdanie.join(""));
+                zdanie = [];
+            } else {
+
+                zdanie.push(arq);
+            }
+        }
+        
+        toCheck.push(zdanie.join(""));
+
+        var repeat = [];
+        var count = [];
+
+        for (var l = 0; l < toCheck.length; l ++){
+            count[l] = 0;
+        }
+
+        var toAdd = true;
+
+        for (var j = 0; j < toCheck.length; j++){
+
+            for (var k = 0; k < repeat.length; k++){
+                if (toCheck[j] == repeat[k]){
+                    toAdd = false;
+                    count[k] += 1;
+                    break;
+                }
+            }
+
+            if (toAdd == true){
+
+                repeat.push(toCheck[j]);
+                count[j] += 1;
+            } else {
+                
+                toAdd = true;
+            }
+        }
+
+        var wynik = [];
+        for (var o = 0; o < count.length; o++){
+            if (count[o] >= minFreq){
+                wynik.push(toCheck[o]);
+            }
+        }
+
+        return wynik;
+    }
+
     function search_answear(input)
     {
         var position_in_category=find_pattern(input);
