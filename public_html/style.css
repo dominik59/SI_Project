@@ -21,13 +21,25 @@ body
     max-width: 500px;
     max-height: 500px;
 }
+#zeszyt{
+    position:absolute;
+    margin-bottom: 400px;    
+    margin-top: 243px;
+    width: 338px;
+    margin-right: 48px;
+    
+    top: 2%;
+    left: 59%;
+    max-width: 500px;
+    max-height: 500px;
+}
 .box{
     text-align: center;
 }
 .user {
     position: absolute;
-    top: 31%;
-    left: 69%;
+    top: 67%;
+    left: 79%;
 }
 span > input {
     background-color: transparent;
@@ -36,7 +48,7 @@ span > input {
     outline: none;
 }
 #info{
-    color: limegreen;
+    color: #00b0cb;
     position: absolute;
     top: 17%;
     left: 68%;
@@ -60,4 +72,13 @@ span > input {
 
 .gsc-modal-background-image-visible{
     opacity: 0 !important;
+}
+
+.gsc-control-cse
+{
+    border-color: rgba(255, 255, 255, 0) !important;
+    background-color: rgba(255, 255, 255, 0) !important;
+}
+#___gcse_0{
+    height: 0 !important;
 }
