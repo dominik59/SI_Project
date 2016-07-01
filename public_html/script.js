@@ -185,22 +185,36 @@ $('document').ready(function(){
             return "Jak Ci sie podoba?";
         }
         //console.log(find_pattern(input)); 
-        if(position_in_category==-1)
-        {
-            return -1;
-        }
+        
         else
         {
-            return get_template(position_in_category);
+            return get_template(search_for_max_question_compatibility(input,50));
         }
+//        var position_in_category=find_pattern(input);
+//        //console.log(find_pattern(input)); 
+//        if(position_in_category==-1)
+//        {
+//            return -1;
+//        }
+//        else
+//        {
+            
+            //return get_template(position_in_category);
+//        }
         
     }
     
+    /**
+     * 
+     * @param {type} input jest to parametr który zawiera wartość wprowadzoną przez użytkownika
+     * @param {type} compatibility_percentage jest to warość progowa, w której określa się zbliżoność pytania użytkownika do tego występującego w bazie
+     * @returns {unresolved} zwraca pytanie z bazy które najbardziej odpowiada frazie wprowadzonej przez użytkownika
+     */
     function search_for_max_question_compatibility(input,compatibility_percentage)
     {
-        var value_of_max_compatibility_element;
+        var value_of_max_compatibility_element=[];
         var pos_of_elem_with_max_compatibility=-1;
-        for(var i = 0; i<category;i++)
+        for(var i = 0; i<category.length;i++)
         {
             if(i==0){
                 var temp = findRepeat(input.toLowerCase() + " " + get_pattern(i),2);
@@ -248,8 +262,18 @@ $('document').ready(function(){
                 toCheck.splice(toCheck.indexOf("?"),1);
             }
         }
-        console.log();
-        return get_pattern(pos_of_elem_with_max_compatibility);
+        console.log(value_of_max_compatibility_element);
+        var equation=(value_of_max_compatibility_element.length/toCheck.length)*100;
+        if(equation>=compatibility_percentage&&100-compatibility_percentage+100>=equation)
+        {
+            //return get_pattern(pos_of_elem_with_max_compatibility);
+            return pos_of_elem_with_max_compatibility;
+        }
+        else
+        {
+            return -1;   
+        }
+        //return get_pattern(pos_of_elem_with_max_compatibility);
     }
     
     function find_pattern(input)
