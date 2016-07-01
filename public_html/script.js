@@ -333,6 +333,13 @@ $('document').ready(function(){
             {
                 return -1;
             }
+            else
+            {
+                $('#textInput').val=get_template(find_pattern(input));
+                var last_word=get_template(find_pattern(input)).split(" ");
+                //console.log(last_word);
+                gcseCallback(last_word[last_word.length-1]);
+            }
         }
         console.log(value_of_max_compatibility_element);
         var equation=(value_of_max_compatibility_element.length/toCheck.length)*100;
