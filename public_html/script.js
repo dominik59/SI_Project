@@ -300,9 +300,9 @@ $('document').ready(function(){
             function communicate(event) {
                 var x = event.which;
                 if (x == 13){
-                    var text = document.getElementById("textInput");
-                    console.log(text.value);
-                    text.value = "";
+//                    var text = document.getElementById("textInput");
+//                    console.log(text.value);
+//                    text.value = "";
                     server();
                 }
             }
