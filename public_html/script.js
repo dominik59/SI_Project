@@ -250,6 +250,16 @@ $('document').ready(function(){
         }
         else
         {
+            if (position_in_category == -1) {
+                if (iDontNow(input) != -1) {
+
+                    return generateFromHistoric();
+                } else {
+
+                    return "Przepraszam nie rozumiem";
+                }
+            }
+
             return get_template(search_for_max_question_compatibility(input,50));
         }
 //        var position_in_category=find_pattern(input);
@@ -367,16 +377,17 @@ $('document').ready(function(){
 
             if (category[position].childNodes[3].childNodes[0].textContent == "Miasto"){
 
-                var city = category[position].childNodes[1].childNodes[0].textContent;
+                var city = category[position].childNodes[1].childNodes[0].textContent.toUpperCase();
 
                 for(var i=0;i<category.length;i++)
                 {
-                    //console.log(category[i].childNodes[1].childNodes[0].textContent);
+                    console.log(category[i].childNodes[1].childNodes[0].textContent);
                     if(category[i].childNodes[1].childNodes[0].textContent.toUpperCase()==city+"TAK")
                     {
-                        return "Moze " + city + "ludzie zachwalaja to miejsce za "+category[i].childNodes[1].childNodes[0].textContent;
+                        return "Moze " + city + " ludzie zachwalaja to miejsce za "+category[i].childNodes[3].childNodes[0].textContent;
                     }
                 }
+                return "Moze" + city;
             }
         }
 
@@ -391,16 +402,9 @@ $('document').ready(function(){
             {
                 return i;
             }
-            
         }
 
-        if (iDontNow(input) != -1){
-
-            return generateFromHistoric();
-        } else {
-
-            return "Przepraszam nie rozumiem";
-        }
+        return -1;
     }
     
     function get_pattern(which_one)

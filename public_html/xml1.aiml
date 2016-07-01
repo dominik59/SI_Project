@@ -44,7 +44,7 @@
 	<template>W Warszawie jest Pałac Kultury, Zamek Królewski... i wiele innych pięknych miejsc</template>
 </category>
 <category>
-	<pattern>CO JEST W Krakowie</pattern>
+	<pattern>CO JEST W Krakowie? </pattern>
 	<template>W Krakowie jest Wawel, Kościół Mariacki, Sukiennice... i wiele innych pięknych miejsc</template>
 </category>
 <category>
@@ -56,8 +56,16 @@
 	<template>Miasto</template>
 </category>
 <category>
+	<pattern>KrakowTAK</pattern>
+	<template>Sukiennice, Wawel oraz Kazimierz z najlepszymi zapiekankami</template>
+</category>
+<category>
 	<pattern>Warszawa</pattern>
 	<template>Miasto</template>
+</category>
+<category>
+	<pattern>WarszawaTAK</pattern>
+	<template>Łazienki, Starówka, Plac Zamkowy oraz Stadion Narodowy</template>
 </category>
 <category>
 	<pattern>Poznań</pattern>
@@ -68,6 +76,10 @@
 	<template>Miasto</template>
 </category>
 <category>
+	<pattern>PoznanTAK</pattern>
+	<template>Park Cytadela, Ratusz Poznański oraz Palmiarnia</template>
+</category>
+<category>
 	<pattern>Gdańsk</pattern>
 	<template>Miasto</template>
 </category>
@@ -76,8 +88,20 @@
 	<template>Miasto</template>
 </category>
 <category>
+	<pattern>GdanskTAK</pattern>
+	<template>Romantyczna ulica Mariacka, Brama Żuraw oraz Dwór Artusa</template>
+</category>
+<category>
 	<pattern>Gdynia</pattern>
 	<template>Miasto</template>
+</category>
+<category>
+	<pattern>GdyniaTAK</pattern>
+	<template>Molo Orłowo, Muzeum Emigracji oraz Akwarium Gdyńskie MIR</template>
+</category>
+<category>
+	<pattern>Co ciekawego jest w Kolobrzegu?</pattern>
+	<template>Wszystko</template>
 </category>
 
 <category>
@@ -89,11 +113,23 @@
 	<template>Miasto</template>
 </category>
 <category>
+	<pattern>KolobrzegTAK</pattern>
+	<template>Latarnia Morska, Muzeum Oręża Polskiego oraz Bazylika Konkatedralna  </template>
+</category>
+<category>
 	<pattern>Lublin</pattern>
 	<template>Miasto</template>
 </category>
 <category>
+	<pattern>LublinTAK</pattern>
+	<template>Starówka, Brama Krakowska oraz Kamienice na Placu Zamkowym</template>
+</category>
+<category>
 	<pattern>Opole</pattern>
+	<template>Miasto</template>
+</category>
+<category>
+	<pattern>OpoleTAK</pattern>
 	<template>Miasto</template>
 </category>
 <category>
@@ -112,14 +148,7 @@
 	<pattern>Katowice</pattern>
 	<template>Miasto</template>
 </category>
-<category>
-	<pattern>Przemyśl</pattern>
-	<template>Miasto</template>
-</category>
-<category>
-	<pattern>Przemysl</pattern>
-	<template>Miasto</template>
-</category>
+
 <category>
 	<pattern>Rzeszów</pattern>
 	<template>Miasto</template>
@@ -148,26 +177,9 @@
 	<pattern>Zakopane</pattern>
 	<template>Miasto</template>
 </category>
-<category>
-	<pattern>Koszalin</pattern>
-	<template>Miasto</template>
-</category>
-<category>
-	<pattern>Łeba</pattern>
-	<template>Miasto</template>
-</category>
-<category>
-	<pattern>Leba</pattern>
-	<template>Miasto</template>
-</category>
-<category>
-	<pattern>Ustka</pattern>
-	<template>Miasto</template>
-</category>
-<category>
-	<pattern>Olsztyn</pattern>
-	<template>Miasto</template>
-</category>
+
+
+
 <category>
 	<pattern>Białystok</pattern>
 	<template>Miasto</template>
@@ -176,26 +188,8 @@
 	<pattern>Bialystok</pattern>
 	<template>Miasto</template>
 </category>
-<category>
-	<pattern>Nowy Sącz</pattern>
-	<template>Miasto</template>
-</category>
-<category>
-	<pattern>Nowy Sacz</pattern>
-	<template>Miasto</template>
-</category>
-<category>
-	<pattern>Nowy Targ</pattern>
-	<template>Miasto</template>
-</category>
-<category>
-	<pattern>Kędzierzyn-Koźle</pattern>
-	<template>Miasto</template>
-</category>
-<category>
-	<pattern>Kedzierzyn Kozle</pattern>
-	<template>Miasto</template>
-</category>
+
+
 <category>
 	<pattern>Jak masz na imię ?</pattern>
 	<template>TravelBot. A jakie jest Twoje ?</template>
