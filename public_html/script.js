@@ -191,7 +191,7 @@ $('document').ready(function(){
 
     function Save(input) {
 
-        add_category(city+" TAK",input)
+        add_category(city+"TAK",input)
     }
 
     function cityLogic(input) {
@@ -219,6 +219,7 @@ $('document').ready(function(){
         } else if (cityQuestion == 2) {
 
             Save(input);
+            cityQuestion = 0;
             return "Dziekuje za odpowiedz zapamietam! ";
         }
 
@@ -245,8 +246,6 @@ $('document').ready(function(){
             gcseCallback(input);
             return "Podoba Ci sie?";
         }
-        //console.log(find_pattern(input)); 
-        
         else
         {
             return get_template(search_for_max_question_compatibility(input,50));
@@ -349,17 +348,16 @@ $('document').ready(function(){
     
     function find_pattern(input)
     {
-        var counter = -1;
         for(var i=0;i<category.length;i++)
         {
             //console.log(category[i].childNodes[1].childNodes[0].textContent);
             if(category[i].childNodes[1].childNodes[0].textContent.toLowerCase()==input.toLowerCase())
             {
-                counter = i;
+                return i;
             }
             
         }
-        return counter;
+        return -1;
     }
     
     function get_pattern(which_one)
