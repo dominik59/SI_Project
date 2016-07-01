@@ -38,7 +38,11 @@ $('document').ready(function(){
 
                 return -1;
             }
+        } else {
+            
+            return -1;
         }
+
     }
 
     function findRepeat(input, minFreq) {
