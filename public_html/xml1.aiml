@@ -40,12 +40,12 @@
 	<template>Specjalizuję się podróżowaniem po Polsce. Wybierz więc miejsce, w które chciałbyś się udać</template>
 </category>
 <category>
-	<pattern>Co jest w Warszawie?</pattern>
-	<template>W Warszawie jest Pałac Kultury, Zamek Królewski... i wiele innych pięknych miejsc</template>
+	<pattern>Co jest w Warszawie ?</pattern>
+	<template>W Warszawie jest Pałac Kultury, Zamek Królewski, ale najciekawsze są warszawskie Łazienki</template>
 </category>
 <category>
-	<pattern>CO JEST W Krakowie? </pattern>
-	<template>W Krakowie jest Wawel, Kościół Mariacki, Sukiennice... i wiele innych pięknych miejsc</template>
+	<pattern>CO jest w Krakowie ? </pattern>
+	<template>W Krakowie są Sukienice, Kazimierz, ale najciekawszy jest Wawel</template>
 </category>
 <category>
 	<pattern>Kraków</pattern>
@@ -80,6 +80,11 @@
 	<template>Park Cytadela, Ratusz Poznański oraz Palmiarnia</template>
 </category>
 <category>
+	<pattern>CO jest w Poznaniu ? </pattern>
+	<template>W Poznaniu jest Park Cytadela, Ratusz Poznański, ale najciekawsza jest Palmiarnia</template>
+</category>
+
+<category>
 	<pattern>Gdańsk</pattern>
 	<template>Miasto</template>
 </category>
@@ -89,8 +94,13 @@
 </category>
 <category>
 	<pattern>GdanskTAK</pattern>
-	<template>Romantyczna ulica Mariacka, Brama Żuraw oraz Dwór Artusa</template>
+	<template>Romantyczna ulica Mariacka, Brama Żuraw oraz Romantyczna ulica Mariacka, Brama Żuraw</template>
 </category>
+<category>
+	<pattern>Co jest w Gdańsku ? </pattern>
+	<template>W Gdańsku jest Romantyczna ulica Mariacka, Brama Żuraw, ale najciekawszy jest Dwór Artusa</template>
+</category>
+
 <category>
 	<pattern>Gdynia</pattern>
 	<template>Miasto</template>
@@ -100,8 +110,12 @@
 	<template>Molo Orłowo, Muzeum Emigracji oraz Akwarium Gdyńskie MIR</template>
 </category>
 <category>
-	<pattern>Co ciekawego jest w Kolobrzegu?</pattern>
-	<template>Wszystko</template>
+	<pattern>Co jest w Gdyni ?</pattern>
+	<template>W Gdyni jest Akwarium Gdyńskie MIR, Muzeum Emigracji , ale najciekawsze jest Molo Orłowo</template>
+</category>
+<category>
+	<pattern>Co jest w Kolobrzegu ?</pattern>
+	<template>W kołobrzegu jest Latarnia Morska, Muzeum Oręża Polskiego ale najciekawsza jest Bazylika Konkatedralna</template>
 </category>
 
 <category>
@@ -125,17 +139,36 @@
 	<template>Starówka, Brama Krakowska oraz Kamienice na Placu Zamkowym</template>
 </category>
 <category>
+	<pattern>Co jest w Lublinei ?</pattern>
+	<template>W Lublinie jest Brama Krakowska, Kamienice na placu Zamkowym , ale najpiękniejsza jest Starówka</template>
+</category>
+
+<category>
 	<pattern>Opole</pattern>
 	<template>Miasto</template>
 </category>
 <category>
 	<pattern>OpoleTAK</pattern>
-	<template>Miasto</template>
+	<template>Wenecja Opolska, Zoo oraz Amfiteatr</template>
+</category>
+
+<category>
+	<pattern>Co jest w Opolu ?</pattern>
+	<template>W Opolu jest Wenecja Opolska, Zoo, ale najciekawszy jest Amfiteatr</template>
 </category>
 <category>
 	<pattern>Gniezno</pattern>
 	<template>Miasto</template>
 </category>
+<category>
+	<pattern>GnieznoTAK</pattern>
+	<template>Katedra Gnieźnieńska, Kościół św. Wawrzyńca oraz słynne Drzwi Gnieźnieńskie</template>
+</category>
+<category>
+	<pattern>Co jest w Gnieźnie ?</pattern>
+	<template>W Gnieźnie jest Katedra Gnieźnieńska, Kościół św. Wawrzyńca ale najciekawsze są Drzwi Gnieźnieńskie</template>
+</category>
+
 <category>
 	<pattern>Wrocław</pattern>
 	<template>Miasto</template>
@@ -145,10 +178,30 @@
 	<template>Miasto</template>
 </category>
 <category>
+	<pattern>WrocławTAK</pattern>
+	<template>Rynek Główny, wrocławskie krasnale oraz panorama</template>
+</category>
+<category>
+	<pattern>WroclawTAK</pattern>
+	<template>Rynek Główny, wrocławskie krasnale oraz panorama</template>
+</category>
+<category>
+	<pattern>Co jest we Wrocławiu ?</pattern>
+	<template>W Gnieźnie jest Rynek Główny, wrocławskie krasnale ale najciekawsza jest Panorama</template>
+</category>
+<category>
 	<pattern>Katowice</pattern>
 	<template>Miasto</template>
 </category>
+<category>
+	<pattern>KatowiceTAK</pattern>
+	<template>Park Kościuszki, Nikiszowiec oraz Spodek</template>
+</category>
 
+<category>
+	<pattern>Co jest w Katowicach ?</pattern>
+	<template>W Gnieźnie jest Park Kościuszki, Nikiszowiec ale najfajniejszy jest Spodek</template>
+</category>
 <category>
 	<pattern>Rzeszów</pattern>
 	<template>Miasto</template>
@@ -158,8 +211,29 @@
 	<template>Miasto</template>
 </category>
 <category>
+	<pattern>RzeszowTAK</pattern>
+	<template>Muzeum Dobranocek, Letni Pałac Lubomirskich oraz Ratusz</template>
+</category>
+<category>
+	<pattern>RzeszówTAK</pattern>
+	<template>Muzeum Dobranocek, Letni Pałac Lubomirskich oraz Ratusz</template>
+</category>
+
+<category>
+	<pattern>Co jest w Rzeszowie ?</pattern>
+	<template>W Rzeszowie jest Muzeum Dobranocek, Letni Pałac Lubomirskich ale najciekawszy jest Ratusz</template>
+</category>
+<category>
 	<pattern>Bydgoszcz</pattern>
 	<template>Miasto</template>
+</category>
+<category>
+	<pattern>BydgoszczTAK</pattern>
+	<template>Wyspa Młyńska, Muzeum Mydła oraz Myslecinek</template>
+</category>
+<category>
+	<pattern>Co jest w Bydgoszczy ?</pattern>
+	<template>W Bydgoszczy jest Wyspa Młyńska, Muzeum Mydła ale najciekawszy jest Myslecinek </template>
 </category>
 <category>
 	<pattern>Toruń</pattern>
@@ -170,16 +244,41 @@
 	<template>Miasto</template>
 </category>
 <category>
+	<pattern>TorunTAK</pattern>
+	<template>Żywe Muzeum Piernika, Pomnik Mikołaja Kopernika oraz Planetarium</template>
+</category>
+<category>
+	<pattern>ToruńTAK</pattern>
+	<template>Żywe Muzeum Piernika, Pomnik Mikołaja Kopernika oraz Planetarium</template>
+</category>
+<category>
+	<pattern>Co jest w Toruniu ?</pattern>
+	<template>W Toruniu jest Żywe Muzeum Piernika, Pomnik Mikołaja Kopernika ale najciekawsze jest Planetarium</template>
+</category>
+<category>
 	<pattern>Kalisz</pattern>
 	<template>Miasto</template>
+</category>
+<category>
+	<pattern>KaliszTAK</pattern>
+	<template>Baszta Dorotka, Katedra św Mikołaja oraz (w okolicy) Zamek w Gołuchowie</template>
+</category>
+<category>
+	<pattern>Co jest w Kaliszu ?</pattern>
+	<template>W Kaliszu jest ŻBaszta Dorotka, Katedra św Mikołaja ale (w okolicy) najciekawszy jest Zamek w Gołuchowie</template>
 </category>
 <category>
 	<pattern>Zakopane</pattern>
 	<template>Miasto</template>
 </category>
-
-
-
+<category>
+	<pattern>ZakopaneTAK</pattern>
+	<template>Morskie Oko, Kasprowy Wierch oraz Krupówki</template>
+</category>
+<category>
+	<pattern>Co jest w Zakopanem ?</pattern>
+	<template>W Zakopanem jest Morskie Oko, Kasprowy Wierch ale najfajniejsze są Krupówki</template>
+</category>
 <category>
 	<pattern>Białystok</pattern>
 	<template>Miasto</template>
@@ -188,6 +287,15 @@
 	<pattern>Bialystok</pattern>
 	<template>Miasto</template>
 </category>
+<category>
+	<pattern>BialystokTAK</pattern>
+	<template>Piwnice pałacu Branickich, Panorama oraz Pałac Nowika </template>
+</category>
+<category>
+	<pattern>Co jest w Białymstoku ?</pattern>
+	<template>W Białymstoku jestPiwnice pałacu Branickich, Panorama ale najciekawszy jest Pałac Nowika</template>
+</category>
+
 
 
 <category>

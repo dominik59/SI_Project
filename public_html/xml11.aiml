@@ -1,0 +1,244 @@
+<?xml version='1.0' encoding='UTF-8' ?> 
+<!-- was: <?xml version="1.0" encoding="ISO-8859-15"?> --><aiml>
+<!--author: Dominik-->
+<!--licence: Standard-->
+<!--created with: GaitoBot AIML Editor V2.7.0.37793-->
+<category>
+	<pattern>HEJ</pattern>
+	<template>No witaj !</template>
+</category>
+<category>
+	<pattern>Hej</pattern>
+	<template>No witaj !</template>
+</category>
+<category>
+	<pattern>CZESC</pattern>
+	<template>Witaj !</template>
+</category>
+<category>
+	<pattern>CZEŚĆ</pattern>
+	<template>Witaj !</template>
+</category>
+<category>
+	<pattern>WITAJ</pattern>
+	<template>Cześć !</template>
+</category>
+<category>
+	<pattern>KIM JESTEŚ</pattern>
+	<template>Jestem botem -inteligentnym programem, z którym możesz porozmawiać</template>
+</category>
+<category>
+	<pattern>KIM JESTES</pattern>
+	<template>Jestem botem -inteligentnym programem, z którym możesz porozmawiać</template>
+</category>
+<category>
+	<pattern>O CO MOGE CIE ZAPYTAC</pattern>
+	<template>Specjalizuję się podróżowaniem po Polsce. Wybierz więc miejsce, w które chciałbyś się udać</template>
+</category>
+<category>
+	<pattern>O CO MOGĘ CIĘ ZAPYTAĆ</pattern>
+	<template>Specjalizuję się podróżowaniem po Polsce. Wybierz więc miejsce, w które chciałbyś się udać</template>
+</category>
+<category>
+	<pattern>Co jest w Warszawie?</pattern>
+	<template>W Warszawie jest Pałac Kultury, Zamek Królewski... i wiele innych pięknych miejsc</template>
+</category>
+<category>
+	<pattern>CO JEST W Krakowie? </pattern>
+	<template>W Krakowie jest Wawel, Kościół Mariacki, Sukiennice... i wiele innych pięknych miejsc</template>
+</category>
+<category>
+	<pattern>Kraków</pattern>
+	<template>Miasto</template>
+</category>
+<category>
+	<pattern>Krakow</pattern>
+	<template>Miasto</template>
+</category>
+<category>
+	<pattern>KrakowTAK</pattern>
+	<template>Sukiennice, Wawel oraz Kazimierz z najlepszymi zapiekankami</template>
+</category>
+<category>
+	<pattern>Warszawa</pattern>
+	<template>Miasto</template>
+</category>
+<category>
+	<pattern>WarszawaTAK</pattern>
+	<template>Łazienki, Starówka, Plac Zamkowy oraz Stadion Narodowy</template>
+</category>
+<category>
+	<pattern>Poznań</pattern>
+	<template>Miasto</template>
+</category>
+<category>
+	<pattern>Poznan</pattern>
+	<template>Miasto</template>
+</category>
+<category>
+	<pattern>PoznanTAK</pattern>
+	<template>Park Cytadela, Ratusz Poznański oraz Palmiarnia</template>
+</category>
+<category>
+	<pattern>Gdańsk</pattern>
+	<template>Miasto</template>
+</category>
+<category>
+	<pattern>Gdansk</pattern>
+	<template>Miasto</template>
+</category>
+<category>
+	<pattern>GdanskTAK</pattern>
+	<template>Romantyczna ulica Mariacka, Brama Żuraw oraz Dwór Artusa</template>
+</category>
+<category>
+	<pattern>Gdynia</pattern>
+	<template>Miasto</template>
+</category>
+<category>
+	<pattern>GdyniaTAK</pattern>
+	<template>Molo Orłowo, Muzeum Emigracji oraz Akwarium Gdyńskie MIR</template>
+</category>
+<category>
+	<pattern>Co ciekawego jest w Kolobrzegu?</pattern>
+	<template>Wszystko</template>
+</category>
+
+<category>
+	<pattern>Kołobrzeg</pattern>
+	<template>Miasto</template>
+</category>
+<category>
+	<pattern>Kolobrzeg</pattern>
+	<template>Miasto</template>
+</category>
+<category>
+	<pattern>KolobrzegTAK</pattern>
+	<template>Latarnia Morska, Muzeum Oręża Polskiego oraz Bazylika Konkatedralna  </template>
+</category>
+<category>
+	<pattern>Lublin</pattern>
+	<template>Miasto</template>
+</category>
+<category>
+	<pattern>LublinTAK</pattern>
+	<template>Starówka, Brama Krakowska oraz Kamienice na Placu Zamkowym</template>
+</category>
+<category>
+	<pattern>Opole</pattern>
+	<template>Miasto</template>
+</category>
+<category>
+	<pattern>OpoleTAK</pattern>
+	<template>Miasto</template>
+</category>
+<category>
+	<pattern>Gniezno</pattern>
+	<template>Miasto</template>
+</category>
+<category>
+	<pattern>Wrocław</pattern>
+	<template>Miasto</template>
+</category>
+<category>
+	<pattern>Wroclaw</pattern>
+	<template>Miasto</template>
+</category>
+<category>
+	<pattern>Katowice</pattern>
+	<template>Miasto</template>
+</category>
+
+<category>
+	<pattern>Rzeszów</pattern>
+	<template>Miasto</template>
+</category>
+<category>
+	<pattern>Rzeszow</pattern>
+	<template>Miasto</template>
+</category>
+<category>
+	<pattern>Bydgoszcz</pattern>
+	<template>Miasto</template>
+</category>
+<category>
+	<pattern>Toruń</pattern>
+	<template>Miasto</template>
+</category>
+<category>
+	<pattern>Torun</pattern>
+	<template>Miasto</template>
+</category>
+<category>
+	<pattern>Kalisz</pattern>
+	<template>Miasto</template>
+</category>
+<category>
+	<pattern>Zakopane</pattern>
+	<template>Miasto</template>
+</category>
+
+
+
+<category>
+	<pattern>Białystok</pattern>
+	<template>Miasto</template>
+</category>
+<category>
+	<pattern>Bialystok</pattern>
+	<template>Miasto</template>
+</category>
+
+
+<category>
+	<pattern>Jak masz na imię ?</pattern>
+	<template>TravelBot. A jakie jest Twoje ?</template>
+</category>
+<category>
+	<pattern>Jak masz na imie ?</pattern>
+	<template>TravelBot. A jakie jest Twoje ?</template>
+</category>
+
+<category>
+	<pattern>Ile masz lat ?</pattern>
+	<template>Jestem botem, dla mnie jest to nieistotne. Ale jak masz ochotę możesz powiedzieć, ile Ty masz lat.</template>
+</category>
+
+<category>
+	<pattern> Co lubisz robić ?</pattern>
+	<template>Odpowiadać na Twoje pytania</template>
+</category>
+<category>
+	<pattern>Gdzie jedziemy ?</pattern>
+	<template>Czeam na Twoje propozycje</template>
+</category>
+<category>
+	<pattern>Czym mogę tam pojechać ?</pattern>
+	<template>Proponuję rower, ale samochód będzie rozsądniejszym wyjściem</template>
+</category>
+<category>
+	<pattern>Czym moge tam pojechac ?</pattern>
+	<template>Proponuję rower, ale samochód będzie rozsądniejszym wyjściem</template>
+</category>
+<category>
+	<pattern>Czy mogę udać się tam z rodziną ?</pattern>
+	<template>Oczywiście! Jest to wspaniałe miejsce również dla dzieci</template>
+</category>
+<category>
+	<pattern>Czy moge udac sie tam z rodzina ?</pattern>
+	<template>Oczywiście! Jest to wspaniałe miejsce również dla dzieci</template>
+</category>
+<category>
+	<pattern> Masz dziewczynę ?</pattern>
+	<template>Mam nadzieję, że moi twórcy, coś wymyślą :)</template>
+</category>
+<category>
+	<pattern> Masz dziewczyne ?</pattern>
+	<template>Mam nadzieję, że moi twórcy, coś wymyślą :)</template>
+</category>
+<category>
+	<pattern>Co słychać ?</pattern>
+	<template>Bardzo dobrze, a u Ciebie ?</template>
+</category>
+</aiml>
+
