@@ -1,6 +1,8 @@
 body
 {
     overflow-y: hidden;
+    background-image: url(background.png);
+    background-size: cover;
 }
 #robot{
     position:relative;
@@ -37,8 +39,8 @@ span > input {
     color: limegreen;
     position: absolute;
     top: 17%;
-    left: 65%;
-    width: 264px;
+    left: 68%;
+    width: 254px;
 }
 .absolute_cloud
 {

@@ -119,6 +119,8 @@ $('document').ready(function(){
     
     function are_strings_similar(input_string,comparsion_string,similarity_percentage)
     {
+        if(comparsion_string.length==1)
+            return false;
         var input_string_keys=[];
         var input_string_values=[];        
         for (var i=0;i<input_string.length;i++)
@@ -157,7 +159,7 @@ $('document').ready(function(){
         {
             percentage+=input_string_values[i];
         }
-        percentage=(parseFloat(percentage)/parseFloat(input_string.length))*100.0;
+        percentage=(parseFloat(percentage)/parseFloat(comparsion_string.length))*100.0;
         if(percentage>=similarity_percentage && 100-similarity_percentage+100>=percentage)
         {
             //console.log(percentage);
@@ -223,17 +225,20 @@ $('document').ready(function(){
         {
             if(i==0){
                 var temp = findRepeat(input.toLowerCase() + " " + get_pattern(i),2);
-                value_of_max_compatibility_element=temp;
-                pos_of_elem_with_max_compatibility=i;
+                if(temp.length!=0)
+                {                   
+                    value_of_max_compatibility_element=temp;
+                    pos_of_elem_with_max_compatibility=i;
+                }
             }
-            else
+            else 
             {
-                var temp = findRepeat(input.toLowerCase() + " " + get_pattern(i),2);
+                var temp = findRepeat(input.toLowerCase() + " " + get_pattern(i),2);                
                 if(temp.length>value_of_max_compatibility_element.length)
                 {
                     value_of_max_compatibility_element=temp;
                     pos_of_elem_with_max_compatibility=i;
-                }
+                }                              
             }
         
         }
@@ -303,8 +308,16 @@ $('document').ready(function(){
     
     function get_template(which_element)
     {
+        if(which_element==-1)
+        {
+            return -1;
+        }
+        else
+        {
+            return category[which_element].childNodes[3].childNodes[0].textContent;
+        }
         //console.log(category[which_element].childNodes[3].childNodes[0].textContent);
-        return category[which_element].childNodes[3].childNodes[0].textContent;
+        
     }
     
     function add_category(pattern,template)
