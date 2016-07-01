@@ -32,7 +32,7 @@ $('document').ready(function(){
 
         if (position != -1) {
             if (category[position].childNodes[3].childNodes[0].textContent == "Miasto") {
-
+                document.getElementById('robot').src="Infobot_render1.png";
                 return 1;
             } else {
 
@@ -270,6 +270,13 @@ $('document').ready(function(){
             if(toCheck.indexOf("?")!=-1)
             {
                 toCheck.splice(toCheck.indexOf("?"),1);
+            }
+        }
+        if(toCheck[0]=="co"&&toCheck[1]=="jest")
+        {
+            if(find_pattern(input)==-1)
+            {
+                return -1;
             }
         }
         console.log(value_of_max_compatibility_element);

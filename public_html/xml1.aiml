@@ -36,7 +36,115 @@
 	<template>W Krakowie jest Wawel</template>
 </category>
 <category>
+	<pattern>Kraków</pattern>
+	<template>Miasto</template>
+</category>
+<category>
 	<pattern>Krakow</pattern>
+	<template>Miasto</template>
+</category>
+<category>
+	<pattern>Warszawa</pattern>
+	<template>Miasto</template>
+</category>
+<category>
+	<pattern>Poznań</pattern>
+	<template>Miasto</template>
+</category>
+<category>
+	<pattern>Gdańsk</pattern>
+	<template>Miasto</template>
+</category>
+<category>
+	<pattern>Gdynia</pattern>
+	<template>Miasto</template>
+</category>
+<category>
+	<pattern>Lublin</pattern>
+	<template>Miasto</template>
+</category>
+<category>
+	<pattern>Kołobrzeg</pattern>
+	<template>Miasto</template>
+</category>
+<category>
+	<pattern>Zakopane</pattern>
+	<template>Miasto</template>
+</category>
+<category>
+	<pattern>Lublin</pattern>
+	<template>Miasto</template>
+</category>
+<category>
+	<pattern>Opole</pattern>
+	<template>Miasto</template>
+</category>
+<category>
+	<pattern>Pilzno</pattern>
+	<template>Miasto</template>
+</category>
+<category>
+	<pattern>Wrocław</pattern>
+	<template>Miasto</template>
+</category>
+<category>
+	<pattern>Katowice</pattern>
+	<template>Miasto</template>
+</category>
+<category>
+	<pattern>Przemyśl</pattern>
+	<template>Miasto</template>
+</category>
+<category>
+	<pattern>Rzeszów</pattern>
+	<template>Miasto</template>
+</category>
+<category>
+	<pattern>Bydgoszcz</pattern>
+	<template>Miasto</template>
+</category>
+<category>
+	<pattern>Toruń</pattern>
+	<template>Miasto</template>
+</category>
+<category>
+	<pattern>Kalisz</pattern>
+	<template>Miasto</template>
+</category>
+<category>
+	<pattern>Zakopane</pattern>
+	<template>Miasto</template>
+</category>
+<category>
+	<pattern>Koszalin</pattern>
+	<template>Miasto</template>
+</category>
+<category>
+	<pattern>Łeba</pattern>
+	<template>Miasto</template>
+</category>
+<category>
+	<pattern>Ustka</pattern>
+	<template>Miasto</template>
+</category>
+<category>
+	<pattern>Olsztyn</pattern>
+	<template>Miasto</template>
+</category>
+<category>
+	<pattern>Białystok</pattern>
+	<template>Miasto</template>
+</category>
+<category>
+	<pattern>Nowy Sącz</pattern>
+	<template>Miasto</template>
+</category>
+<category>
+	<pattern>Nowy Targ</pattern>
+	<template>Miasto</template>
+</category>
+<category>
+	<pattern>Kędzierzyn-Koźle</pattern>
 	<template>Miasto</template>
 </category>
 </aiml>
