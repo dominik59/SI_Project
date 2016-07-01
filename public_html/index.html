@@ -35,14 +35,15 @@ and open the template in the editor.
                     var text = document.getElementById("textInput");
                     console.log(text.value);
                     text.value = "";
-                    server();
+                    server(text);
                 }
             }
 
             // glowna metoda do komunikacji gdzie bedzie zainplementowana logika naszego robota
-            function server() {
+            function server(text) {
                 var odpowiedz = document.getElementById("info");
                 odpowiedz.innerHTML = "No Czesc";
+
             }
 
         </script>
