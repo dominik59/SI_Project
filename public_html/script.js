@@ -173,23 +173,77 @@ $('document').ready(function(){
         }
         
     }
+    function generateCity(){
 
-    var cityQuestion;
+        while (true){
+
+            var position = Math.floor((Math.random() * category.length) + 1);
+
+            if (category[position].childNodes[3].childNodes[0].textContent == "Miasto"){
+
+                return category[position].childNodes[1].childNodes[0].textContent;
+            }
+        }
+    }
+
+    var cityQuestion = 0;
+    var city;
+
+    function Save(input) {
+
+        add_category(city+" TAK",input)
+    }
+
+    function cityLogic(input) {
+
+        if (cityQuestion == 1){
+
+            if (input.toUpperCase() == "NIE"){
+
+                var answer = 'Naprawde mi przykro :( Znajdziemy cos innego, moze ';
+                var city = generateCity();
+
+                answer += city;
+                gcseCallback(city);
+                cityQuestion = 1;
+
+                return answer;
+            } else if (input.toUpperCase() == "TAK"){
+
+                cityQuestion = 2;
+                return 'Ciesze sie, a co szczegolnie?';
+            } else {
+
+                return 'Naprawde chce wiedziec! :(';
+            }
+        } else if (cityQuestion == 2) {
+
+            Save(input);
+            return "Dziekuje za odpowiedz zapamietam! ";
+        }
+
+        return " ";
+    }
+
 
     function search_answear(input)
     {
         //alert(1);
+        
+        var answer = cityLogic(input);
 
-        if (cityQuestion == 1){
+        if (answer != " "){
 
-            console.log("TAK/NIE");
+            return answer;
         }
+
 
         var position_in_category=find_pattern(input);
         if (isCity(position_in_category) != -1){
             cityQuestion = 1;
+            city = input;
             gcseCallback(input);
-            return "Jak Ci sie podoba?";
+            return "Podoba Ci sie?";
         }
         //console.log(find_pattern(input)); 
         
