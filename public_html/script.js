@@ -24,8 +24,11 @@ $('document').ready(function(){
             category.push(user);            
         }
         search_answear("czesc");
-        add_category("dddd","ccc");
-        findRepeat('nie wiem nie wiem', 2);
+        //add_category("dddd","ccc");
+        console.log('witaj , witam Cie ' + search_answear("czesc"));
+        console.log(findRepeat('witaj , witam Cie czesc ' + search_answear("witaj"), 2));
+        are_strings_similar("sprawozdanie","sprawozdanie",5);
+        
         
     }
 });
@@ -85,11 +88,58 @@ $('document').ready(function(){
 
         return wynik;
     }
+    
+    function are_strings_similar(input_string,comparsion_string,similarity_percentage)
+    {
+        var input_string_keys=[];
+        var input_string_values=[];
+        var comparsion_string_keys=[];
+        var comparsion_string_values=[];
+        for (var i=0;i<input_string.length;i++)
+        {
+            var letter=input_string[i];
+            if(input_string_keys.indexOf(letter)!=-1)
+            {
+                continue;
+            }
+            for(var k=0;k<comparsion_string.length;k++)
+            {
+                if(comparsion_string[k]==letter)
+                {
+                    if(input_string_keys.indexOf(letter)!=-1)
+                    {
+                        if(input_string_values[input_string_keys.indexOf(letter)]!=null)
+                        {
+                            input_string_values[input_string_keys.indexOf(letter)]+=1;
+                        }
+                        else
+                        {
+                            input_string_values[input_string_keys.indexOf(letter)]=1;
+                        }
+                            
+                    }
+                    else
+                    {
+                        input_string_keys.push(letter);
+                        input_string_values[input_string_keys.indexOf(letter)]=1;
+                    }
+                }
+            }
+        }
+        var percentage=0.0;
+        for(var i = 0; i<input_string_values.length;i++)
+        {
+            percentage+=input_string_values[i];
+        }
+        console.log((parseFloat(percentage)/parseFloat(input_string.length))*100.0);
+        console.log(input_string_keys);
+        console.log(input_string_values);
+    }
 
     function search_answear(input)
     {
         var position_in_category=find_pattern(input);
-        console.log(find_pattern(input)); 
+        //console.log(find_pattern(input)); 
         if(position_in_category==-1)
         {
             return "nie znaleziono takiego pytania";
@@ -106,7 +156,7 @@ $('document').ready(function(){
         var counter = -1;
         for(var i=0;i<category.length;i++)
         {
-            console.log(category[i].childNodes[1].childNodes[0].textContent);
+            //console.log(category[i].childNodes[1].childNodes[0].textContent);
             if(category[i].childNodes[1].childNodes[0].textContent.toLowerCase()==input.toLowerCase())
             {
                 counter = i;
@@ -117,7 +167,7 @@ $('document').ready(function(){
     }
     function get_template(which_element)
     {
-        console.log(category[which_element].childNodes[3].childNodes[0].textContent);
+        //console.log(category[which_element].childNodes[3].childNodes[0].textContent);
         return category[which_element].childNodes[3].childNodes[0].textContent;
     }
     
@@ -133,7 +183,7 @@ $('document').ready(function(){
         temp_xml_category.appendChild(temp_xml_pattern);
         temp_xml_category.appendChild(temp_xml_template);
         $(actual_xml).find("aiml").append(temp_xml_category);
-        console.log(actual_xml);
+        //console.log(actual_xml);
         $.ajax({   					 // te {{ }} są po to, by generator pominal to przy dokumentacji
                type:"POST",               
 	       url: 'saving_xml.php',  //the script to call to get data          
