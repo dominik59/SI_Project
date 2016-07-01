@@ -162,6 +162,7 @@ $('document').ready(function(){
 
     function search_answear(input)
     {
+        //alert(1);
         var position_in_category=find_pattern(input);
         //console.log(find_pattern(input)); 
         if(position_in_category==-1)
@@ -183,20 +184,51 @@ $('document').ready(function(){
         {
             if(i==0){
                 var temp = findRepeat(input.toLowerCase() + " " + get_pattern(i),2);
-                value_of_max_compatibility_element=temp.length;
+                value_of_max_compatibility_element=temp;
                 pos_of_elem_with_max_compatibility=i;
             }
             else
             {
                 var temp = findRepeat(input.toLowerCase() + " " + get_pattern(i),2);
-                if(temp.length>value_of_max_compatibility_element)
+                if(temp.length>value_of_max_compatibility_element.length)
                 {
-                    value_of_max_compatibility_element=temp.length;
+                    value_of_max_compatibility_element=temp;
                     pos_of_elem_with_max_compatibility=i;
                 }
             }
         
         }
+        var toCheck = [], zdanie = [], arq;
+        for (var i = 0; i < input.length; i++){
+
+            arq = input[i];
+            if (arq == " "){                
+                if(zdanie.length!=0)
+                toCheck.push(zdanie.join(""));
+                zdanie = [];
+            } else {                
+                zdanie.push(arq);
+            }
+        }
+        
+        toCheck.push(zdanie.join(""));
+        //console.log(toCheck.indexOf("!"));
+        while(toCheck.indexOf("!")!=-1 || toCheck.indexOf("!")!=-1 || toCheck.indexOf("?")!=-1)
+        {
+            if(toCheck.indexOf("!")!=-1)
+            {
+                toCheck.splice(toCheck.indexOf("!"),1);
+            }
+            if(toCheck.indexOf(",")!=-1)
+            {
+                toCheck.splice(toCheck.indexOf(","),1);
+            }
+            if(toCheck.indexOf("?")!=-1)
+            {
+                toCheck.splice(toCheck.indexOf("?"),1);
+            }
+        }
+        console.log();
         return get_pattern(pos_of_elem_with_max_compatibility);
     }
     
@@ -252,6 +284,41 @@ $('document').ready(function(){
 	      } 
 	    });
     }
+    function focuse(){
+
+                var x = document.getElementById("textInput");
+                x.value = "";
+            }
+
+            function noFocuse() {
+                var x = document.getElementById("textInput");
+                x.value = "Naprawde napisz cos ...";
+            }
+
+            function communicate(event) {
+                var x = event.which;
+                if (x == 13){
+                    var text = document.getElementById("textInput");
+                    console.log(text.value);
+                    text.value = "";
+                    server();
+                }
+            }
+
+            // glowna metoda do komunikacji gdzie bedzie zainplementowana logika naszego robota
+            function server() {                
+                var odpowiedz = document.getElementById("info");
+                odpowiedz.innerHTML = search_answear(document.getElementById("textInput").value);
+            }
+    $( ".user" ).keypress(function() {
+        communicate(event);
+    });
+    $( ".user" ).click(function() {
+        focuse();
+    });
+    $( ".user" ).focusout(function() {
+        noFocuse();
+    });
 });
 
 
