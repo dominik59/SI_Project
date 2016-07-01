@@ -25,9 +25,9 @@ $('document').ready(function(){
         }
         search_answear("czesc");
         //add_category("dddd","ccc");
-        console.log('witaj , witam Cie ' + search_answear("czesc"));
-        console.log(findRepeat('witaj , witam Cie czesc ' + search_answear("witaj"), 2));
-        are_strings_similar("sprawozdanie","sprawozdanie",5);
+        //console.log('witaj , witam Cie ' + search_answear("czesc"));
+        //console.log(findRepeat('witaj , witam Cie czesc ' + search_answear("witaj"), 2));
+        //are_strings_similar("sprawozdanie","sprawozdanie",80);
         
         
     }
@@ -62,7 +62,7 @@ $('document').ready(function(){
         for (var j = 0; j < toCheck.length; j++){
 
             for (var k = 0; k < repeat.length; k++){
-                if (toCheck[j] == repeat[k]){
+                if (are_strings_similar(toCheck[j], repeat[k],80)){
                     toAdd = false;
                     count[k] += 1;
                     break;
@@ -92,9 +92,7 @@ $('document').ready(function(){
     function are_strings_similar(input_string,comparsion_string,similarity_percentage)
     {
         var input_string_keys=[];
-        var input_string_values=[];
-        var comparsion_string_keys=[];
-        var comparsion_string_values=[];
+        var input_string_values=[];        
         for (var i=0;i<input_string.length;i++)
         {
             var letter=input_string[i];
@@ -131,9 +129,19 @@ $('document').ready(function(){
         {
             percentage+=input_string_values[i];
         }
-        console.log((parseFloat(percentage)/parseFloat(input_string.length))*100.0);
-        console.log(input_string_keys);
-        console.log(input_string_values);
+        percentage=(parseFloat(percentage)/parseFloat(input_string.length))*100.0;
+        if(percentage>=similarity_percentage && 100-similarity_percentage+100>=percentage)
+        {
+            console.log(percentage);
+            console.log(input_string_keys);
+            console.log(input_string_values);
+            return true;            
+        }
+        else
+        {   console.log(percentage);
+            return false;
+        }
+        
     }
 
     function search_answear(input)
