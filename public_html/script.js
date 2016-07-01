@@ -3,9 +3,11 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-category=[];
+
 
 $('document').ready(function(){
+    category=[];
+    
     $.ajax({
     type: "GET",
     url: "xml1.aiml",
@@ -23,7 +25,7 @@ $('document').ready(function(){
             console.log(user);
             category.push(user);            
         }
-        console.log(search_answear("czesc"));
+        //console.log(search_answear("czesc"));
         //add_category("dddd","ccc");
         //console.log('witaj , witam Cie ' + search_answear("czesc"));
         //console.log(findRepeat('witaj , witam Cie czesc ' + search_answear("witaj"), 2));
