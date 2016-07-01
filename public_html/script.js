@@ -338,6 +338,7 @@ $('document').ready(function(){
                 $('#textInput').val=get_template(find_pattern(input));
                 var last_word=get_template(find_pattern(input)).split(" ");
                 //console.log(last_word);
+                document.getElementById('robot').src="Infobot_render1.png";
                 gcseCallback(last_word[last_word.length-1]);
             }
         }
