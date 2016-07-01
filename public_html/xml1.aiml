@@ -1,38 +1,43 @@
-<?xml version="1.0" encoding="UTF-8"?><!-- was: <?xml version="1.0" encoding="ISO-8859-15"?> --><aiml>
+<?xml version='1.0' encoding='UTF-8' ?> 
+<!-- was: <?xml version="1.0" encoding="ISO-8859-15"?> --><aiml>
 <!--author: Dominik-->
 <!--licence: Standard-->
 <!--created with: GaitoBot AIML Editor V2.7.0.37793-->
 <category>
 	<pattern>CZESC</pattern>
-	<template>No witaj !</template>
+	<template>Witaj !</template>
 </category>
 <category>
 	<pattern>CZEŚĆ</pattern>
-	<template>No witaj !</template>
+	<template>Witaj !</template>
 </category>
 <category>
 	<pattern>WITAJ</pattern>
-	<template>No czesc !</template>
+	<template>Cześć !</template>
 </category>
 <category>
 	<pattern>KIM JESTEŚ</pattern>
-	<template>Jestem botem, inteligentnym programem, z którym mozesz pogadac :)</template>
+	<template>Jestem botem -inteligentnym programem, z którym możesz porozmawiać</template>
 </category>
 <category>
 	<pattern>KIM JESTES</pattern>
-	<template>Jestem botem, inteligentnym programem, z którym mozesz pogadac :)</template>
+	<template>Jestem botem -inteligentnym programem, z którym możesz porozmawiać</template>
 </category>
 <category>
-	<pattern>O CO MOGE CIE ZAPYTACs</pattern>
-	<template>Specjalizuje sie glownie w ciekawych miejscach w różnych miastach w Polsce</template>
+	<pattern>O CO MOGE CIE ZAPYTAC</pattern>
+	<template>Specjalizuję się podróżowaniem po Polsce. Wybierz więc miejsce, w które chciałbyś się udać</template>
 </category>
 <category>
-	<pattern>CO JEST W WARSZAWIE</pattern>
-	<template>W Warszawie jest Palac Kultury</template>
+	<pattern>O CO MOGĘ CIĘ ZAPYTAĆ</pattern>
+	<template>Specjalizuję się podróżowaniem po Polsce. Wybierz więc miejsce, w które chciałbyś się udać</template>
+</category>
+<category>
+	<pattern>Co jest w Warszawie?</pattern>
+	<template>W Warszawie jest Pałac Kultury, Zamek Królewski... i wiele innych pięknych miejsc</template>
 </category>
 <category>
 	<pattern>CO JEST W Krakowie</pattern>
-	<template>W Krakowie jest Wawel</template>
+	<template>W Krakowie jest Wawel, Kościół Mariacki, Sukiennice... i wiele innych pięknych miejsc</template>
 </category>
 <category>
 	<pattern>Kraków</pattern>
@@ -51,23 +56,28 @@
 	<template>Miasto</template>
 </category>
 <category>
+	<pattern>Poznan</pattern>
+	<template>Miasto</template>
+</category>
+<category>
 	<pattern>Gdańsk</pattern>
+	<template>Miasto</template>
+</category>
+<category>
+	<pattern>Gdansk</pattern>
 	<template>Miasto</template>
 </category>
 <category>
 	<pattern>Gdynia</pattern>
 	<template>Miasto</template>
 </category>
-<category>
-	<pattern>Lublin</pattern>
-	<template>Miasto</template>
-</category>
+
 <category>
 	<pattern>Kołobrzeg</pattern>
 	<template>Miasto</template>
 </category>
 <category>
-	<pattern>Zakopane</pattern>
+	<pattern>Kolobrzeg</pattern>
 	<template>Miasto</template>
 </category>
 <category>
@@ -79,11 +89,15 @@
 	<template>Miasto</template>
 </category>
 <category>
-	<pattern>Pilzno</pattern>
+	<pattern>Gniezno</pattern>
 	<template>Miasto</template>
 </category>
 <category>
 	<pattern>Wrocław</pattern>
+	<template>Miasto</template>
+</category>
+<category>
+	<pattern>Wroclaw</pattern>
 	<template>Miasto</template>
 </category>
 <category>
@@ -95,7 +109,15 @@
 	<template>Miasto</template>
 </category>
 <category>
+	<pattern>Przemysl</pattern>
+	<template>Miasto</template>
+</category>
+<category>
 	<pattern>Rzeszów</pattern>
+	<template>Miasto</template>
+</category>
+<category>
+	<pattern>Rzeszow</pattern>
 	<template>Miasto</template>
 </category>
 <category>
@@ -104,6 +126,10 @@
 </category>
 <category>
 	<pattern>Toruń</pattern>
+	<template>Miasto</template>
+</category>
+<category>
+	<pattern>Torun</pattern>
 	<template>Miasto</template>
 </category>
 <category>
@@ -123,6 +149,10 @@
 	<template>Miasto</template>
 </category>
 <category>
+	<pattern>Leba</pattern>
+	<template>Miasto</template>
+</category>
+<category>
 	<pattern>Ustka</pattern>
 	<template>Miasto</template>
 </category>
@@ -135,7 +165,15 @@
 	<template>Miasto</template>
 </category>
 <category>
+	<pattern>Bialystok</pattern>
+	<template>Miasto</template>
+</category>
+<category>
 	<pattern>Nowy Sącz</pattern>
+	<template>Miasto</template>
+</category>
+<category>
+	<pattern>Nowy Sacz</pattern>
 	<template>Miasto</template>
 </category>
 <category>
@@ -146,4 +184,66 @@
 	<pattern>Kędzierzyn-Koźle</pattern>
 	<template>Miasto</template>
 </category>
-<category><pattern>SSS</pattern><template>ddd</template></category><category><pattern>SSS</pattern><template>ddd</template></category><category><pattern>KRAKOW TAK</pattern><template>Sukiennice</template></category><category><pattern>KRAKOW TAK</pattern><template>Naprawde napisz cos ...</template></category><category><pattern>KRAKOW TAK</pattern><template>Tlok</template></category><category><pattern>KRAKOW TAK</pattern><template>Nie wiem</template></category><category><pattern>KRAKOW TAK</pattern><template>Hej</template></category><category><pattern>KRAKOW TAK</pattern><template>Hej</template></category><category><pattern>KRAKOW TAK</pattern><template>Hej</template></category><category><pattern>KRAKOW TAK</pattern><template>Krakow</template></category><category><pattern>KRAKOW TAK</pattern><template>Krakow</template></category></aiml>
+<category>
+	<pattern>Kedzierzyn Kozle</pattern>
+	<template>Miasto</template>
+</category>
+<category>
+	<pattern>Jak masz na imię ?</pattern>
+	<template>TravelBot. A jakie jest Twoje ?</template>
+</category>
+<category>
+	<pattern>Jak masz na imie ?</pattern>
+	<template>TravelBot. A jakie jest Twoje ?</template>
+</category>
+
+<category>
+	<pattern>Ile masz lat ?</pattern>
+	<template>Jestem botem, dla mnie jest to nieistotne. Ale jak masz ochotę możesz powiedzieć, ile Ty masz lat.</template>
+</category>
+
+<category>
+	<pattern> Co lubisz robić ?</pattern>
+	<template>Odpowiadać na Twoje pytania</template>
+</category>
+<category>
+	<pattern>Gdzie jedziemy ?</pattern>
+	<template>Czeam na Twoje propozycje</template>
+</category>
+<category>
+	<pattern>Czym mogę tam pojechać ?</pattern>
+	<template>Proponuję rower, ale samochód będzie rozsądniejszym wyjściem</template>
+</category>
+<category>
+	<pattern>Czym moge tam pojechac ?</pattern>
+	<template>Proponuję rower, ale samochód będzie rozsądniejszym wyjściem</template>
+</category>
+<category>
+	<pattern>Czy mogę udać się tam z rodziną ?</pattern>
+	<template>Oczywiście! Jest to wspaniałe miejsce również dla dzieci</template>
+</category>
+<category>
+	<pattern>Czy moge udac sie tam z rodzina ?</pattern>
+	<template>Oczywiście! Jest to wspaniałe miejsce również dla dzieci</template>
+</category>
+<category>
+	<pattern> Masz dziewczynę ?</pattern>
+	<template>Mam nadzieję, że moi twórcy, coś wymyślą :)</template>
+</category>
+<category>
+	<pattern> Masz dziewczyne ?</pattern>
+	<template>Mam nadzieję, że moi twórcy, coś wymyślą :)</template>
+</category>
+<category>
+	<pattern>Co słychać ?</pattern>
+	<template>Bardzo dobrze, a u Ciebie ?</template>
+</category>
+
+
+
+
+
+
+
+
+</aiml>
